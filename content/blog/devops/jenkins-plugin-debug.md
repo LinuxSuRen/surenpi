@@ -2,7 +2,13 @@
 
 # 运行
 
+在 `war` 目录下运行：
+
 `mvn hpi:run`
+
+`mvn jenkins-dev:run`
+
+`mvn jenkins-dev:run -Djenkins.install.runSetupWizard=true -DJENKINS_hOME=.` 需要在目录 `war` 下运行，并保证没有 `work` 目录
 
 # 跳过测试
 
@@ -13,6 +19,8 @@
 # 指定端口
 
 `mvn hpi:run -Djetty.port=1234'
+
+`mvn hpi:run -Djenkins.install.runSetupWizard=true`
 
 # 参考
 

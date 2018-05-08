@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://linuxsuren.github.io/"
 languageCode = "zh-CN"
 defaultContentLanguage = "zh"
 title = "SuRenPi"
@@ -8,20 +8,38 @@ googleAnalytics = "UA-4216293-5"
 
 [[menu.global]]
   name = "博客"
-	weight = 100
-	identifier = "blog"
-	url = "/blog"
+  weight = 100
+  identifier = "blog"
+  url = "/blog"
 [[menu.global]]
   name = "翻译"
-	weight = 200
-	identifier = "translation"
-	url = "/translation"
+  weight = 200
+  identifier = "translation"
+  url = "/translation"
 [[menu.global]]
   name = "开源"
-	weight = 300
-	identifier = "opensource"
-	url = "/opensource"
+  weight = 300
+  identifier = "opensource"
+  url = "/opensource"
 
+# blog
+[[menu.blog]]
+  name = "DevOps"
+  weight = 1100
+  identifer = "devops"
+  url = "/devops"
+[[menu.blog]]
+  name = "SCM"
+  weight = 1200
+  identifer = "scm"
+  url = "/scm"
+[[menu.blog]]
+  name = "Network"
+  weight = 1300
+  identifer = "network"
+  url = "/network"
+	
+# translation
 [[menu.translation]]
   name = "Jenkins"
 	weight = 2100
