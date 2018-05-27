@@ -1,3 +1,17 @@
+# 故障排除
+
+## 粘贴缩进错乱
+
+让 `vim` 进入 `paste` 模式，命令如下：
+
+`:set paste`
+
+解除 `paste` 模式的命令如下：
+
+`:set nopaste`
+
+# 样例配置
+
 ```
 set number
 set incsearch
