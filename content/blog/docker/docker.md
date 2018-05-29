@@ -12,6 +12,10 @@
 
 `docker run jenkins --restart=always`
 
+最简单的启动命令 `docker run surenpi/hugo-docker`
+
+容器停止后，自动删除 `docker run --rm surenpi/hugo-docker`
+
 ## 设置名称
 
 当你启动 `Docker` 容器后，容器的名称时随机生成的。为了方便后续的查找，我们可以通过参数给容器设置一个名称：
