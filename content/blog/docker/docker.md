@@ -42,6 +42,8 @@
 
 通过过滤镜像名称批量删除容器 `docker stop $(docker ps | grep hello | awk '{print $1}') && docker rm $(docker ps | grep hello | awk '{print $1}')`
 
+删除所有已经停止的容器 `docker rm $(docker ps -a | grep Exited | awk '{print $1}')`
+
 # 标签
 
 `docker tag source-image target-image`
