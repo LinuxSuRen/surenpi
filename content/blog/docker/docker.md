@@ -40,6 +40,8 @@
 
 我们可以通过命令 `docker rm 94a5fa599b05` 删除一个容器。当然，前提条件是该容器处于已停止的状态。
 
+通过过滤镜像名称批量删除容器 `docker stop $(docker ps | grep hello | awk '{print $1}') && docker rm $(docker ps | grep hello | awk '{print $1}')`
+
 # 标签
 
 `docker tag source-image target-image`
