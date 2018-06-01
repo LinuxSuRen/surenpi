@@ -7,3 +7,4 @@
 # 构建
 
 http://www.vogella.com/tutorials/EclipseTycho/article.html
+http://maven.apache.org/plugins/maven-eclipse-plugin/pde.html
