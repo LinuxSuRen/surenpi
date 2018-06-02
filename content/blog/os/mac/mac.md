@@ -1,3 +1,27 @@
+# 快捷键
+
+删除文件 `command + delete`
+
+## 浏览器
+
+关闭选项卡 `command + w`
+
+前后切换选项卡 `command + <-`
+
+指定顺序切换选项卡 `command + 1`
+
+关闭浏览器 `command + q`
+
+## 截图
+
+* 截取全屏并保存文件 `shift + command + 3`
+
+* 截取部分并保存文件 `shift + command + 4`
+
+* 截取全屏并保存粘贴板 `shift + control + command + 3`
+
+* 截取部分并保存粘贴板 `shift + control + command + 4`
+
 # 丢失管理身份
 
 当你的误操作导致丢失了 mac 用户的管理员身份时，可以按照下面的步骤找回管理。
