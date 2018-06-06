@@ -27,17 +27,17 @@ googleAnalytics = "UA-4216293-5"
   name = "DevOps"
   weight = 1100
   identifer = "devops"
-  url = "/devops"
+  url = "/blog/devops"
 [[menu.blog]]
   name = "SCM"
   weight = 1200
   identifer = "scm"
-  url = "/scm"
+  url = "/blog/scm"
 [[menu.blog]]
   name = "Network"
   weight = 1300
   identifer = "network"
-  url = "/network"
+  url = "/blog/network"
 	
 # translation
 [[menu.translation]]
@@ -45,6 +45,13 @@ googleAnalytics = "UA-4216293-5"
 	weight = 2100
 	identifier = "jenkins"
 	url = "/jenkins"
+
+[[menu.global]]
+  name = "SuRen"
+  weight = 3100
+  identifier = "suren"
+  post = "external"
+  url = "http://surenpi.com"
 
 [outputs]
 home = [ "HTML", "RSS", "REDIR", "HEADERS" ]

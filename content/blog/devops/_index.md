@@ -1,5 +1,5 @@
 ---
-title: DevOps相关技术文章
-description: DevOps相关技术文章
+title: "DevOps"
+parent: "blog"
 ---
 DevOps相关技术文章
