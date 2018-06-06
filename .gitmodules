@@ -2,6 +2,3 @@
 	path = public
 	url = git@github.com:linuxsuren/linuxsuren.github.io.git
 	branch = master
-[submodule "themes/ananke"]
-	path = themes/ananke
-	url = https://github.com/budparr/gohugo-theme-ananke.git
