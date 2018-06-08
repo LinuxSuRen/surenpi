@@ -1,3 +1,9 @@
+# 构建
+
+跳过JavaDoc `-Dmaven.javadoc.skip=true`
+
+跳过测试 `-DskipTests=true`
+
 # 多模块
 
 ## 部署
