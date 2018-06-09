@@ -1,3 +1,8 @@
+---
+title: Apache2
+description: Apache2 配置
+---
+
 查看工作方式 `apachectl -V | grep -i mpm`
 
 配置文件如下：
