@@ -24,6 +24,12 @@
 
 Jenkins 官方提供了[单元测试](https://wiki.jenkins.io/display/JENKINS/Unit+Test)相关的内容。
 
+# 发布
+
+`mvn -Darguments="-DskipTests" release:prepare`
+
+`mvn -Darguments="-DskipTests" release:perform`
+
 # 参考
 
 [Extend Jenkins](https://wiki.jenkins.io/display/JENKINS/Extend+Jenkins)
