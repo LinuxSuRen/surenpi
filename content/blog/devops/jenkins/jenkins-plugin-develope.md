@@ -1,4 +1,7 @@
-# Jenkins 插件开发
+---
+title: Jenkins 插件开发
+description: Jenkins 插件开发教程
+---
 
 # 环境准备
 
