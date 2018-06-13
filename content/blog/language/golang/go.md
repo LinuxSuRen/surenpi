@@ -1,7 +1,5 @@
 ---
-menu:
-  blog:
-    parent: "golang"
+title: golang
 description: golang
 ---
 
