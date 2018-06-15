@@ -1,3 +1,7 @@
+---
+title: wget
+---
+
 # 代理
 
 通过命令参数设置代理 `wget https://google.com -e "https_proxy=http://localhost:1234"`
