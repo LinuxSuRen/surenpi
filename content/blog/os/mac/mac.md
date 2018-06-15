@@ -1,3 +1,7 @@
+---
+title: Mac 快捷键
+---
+
 # 快捷键
 
 删除文件 `command + delete`
