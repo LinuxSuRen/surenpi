@@ -6,7 +6,9 @@
 
 # shadowsocks
 
-`sudo apt-get install shadowsocks`
+Ubuntu `sudo apt-get install shadowsocks`
+
+CentOS `yum install shadowsocks`
 
 `pip install shadowsocks`
 
@@ -23,6 +25,8 @@
 `sudo apt-get install polipo`
 
 `brew install polip`
+
+安装依赖 `yum install  texinfo  -y` 然后下载源码 `git clone https://github.com/jech/polipo.git` 最后编译 `cd polipo && make all && make install`
 
 ## 使用
 
