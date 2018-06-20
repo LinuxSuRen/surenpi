@@ -49,3 +49,7 @@ gantt
         Create tests for renderer           :2d
         Add to mermaid                      :1d
 {{< /mermaid >}}
+
+# 参考
+
+https://support.typora.io/Draw-Diagrams-With-Markdown/
