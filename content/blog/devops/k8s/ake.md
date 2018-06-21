@@ -1,16 +1,23 @@
 ---
 title: Ake
+description: 一键安装 K8S
 ---
 
-`yum upgrade libsepol libsemanage libselinux libsemanage libselinux audit-libs`
+# 更新依赖
+
+执行命令 `yum upgrade libsepol libsemanage libselinux libsemanage libselinux audit-libs`
+
+# 安装 AKE
+
+通过命令 `wget http://get.alauda.cn/deploy/ake/ake && chmod u+x ake && ./ake up` 会安装 AKE 以及 Kubernetes。
+
+如果发生错误的，需要执行该命令来清理 `curl http://get.alauda.cn/deploy/ake/cleanup | bash`
 
 
-`wget http://get.alauda.cn/deploy/ake/ake && chmod u+x ake && ./ake up`
+# 修改配置文件
 
-如何发生错误的，需要执行该命令来清理 `curl http://get.alauda.cn/deploy/ake/cleanup | bash`
+使用命令 `vim ~.kube/config`，添加如下内容：
 
-
-修改配置文件 `~.kube/config`
 ```
 apiVersion: v1
 clusters:

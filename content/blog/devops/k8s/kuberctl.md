@@ -1,3 +1,8 @@
+---
+title: Kubectl
+description: Kubectl 的使用
+---
+
 # 下载
 
 `wget https://storage.googleapis.com/kubernetes-release/release/v1.10.0/bin/linux/amd64/kubectl`

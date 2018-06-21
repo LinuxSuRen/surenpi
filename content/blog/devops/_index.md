@@ -1,5 +1,6 @@
 ---
 title: "DevOps"
-parent: "blog"
+menu:
+  blog
 ---
 DevOps相关技术文章

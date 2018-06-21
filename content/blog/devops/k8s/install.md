@@ -1,5 +1,6 @@
 ---
 title: 安装 Kubernetes
+description: 在宿主机上安装 K8S
 ---
 
 启用 Docker 服务 `systemctl enable docker.service`

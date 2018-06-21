@@ -7,11 +7,12 @@ description: Jenkins X 部署教程
 
 Jenkins X 是基于容器化来实现的 CI/CD 平台，因此，我们首先需要[搭建 Kubernetes 环境](/blog/devops/k8s/install/)。
 
-# 安装
+# 安装依赖
 
 安装 Git `yum install git -y`
+安装 Maven `yum install maven -y`
 
-拉取 Docker 镜像 
+# 拉取镜像 
 
 ```
 docker pull registry.cn-hangzhou.aliyuncs.com/surenpi/tiller:v2.9.1
@@ -35,9 +36,14 @@ docker tag registry.cn-hangzhou.aliyuncs.com/surenpi/mongodb:3.4.9-r1 docker.io/
 docker pull registry.cn-beijing.aliyuncs.com/surenpi/nexus:0.0.14
 docker tag registry.cn-beijing.aliyuncs.com/surenpi/nexus:0.0.14 docker.io/jenkinsxio/nexus
 
+docker pull registry.cn-hangzhou.aliyuncs.com/surenpi/builder-maven:0.0.307
+docker tag registry.cn-hangzhou.aliyuncs.com/surenpi/builder-maven:0.0.307 docker.io/jenkinsxio/builder-maven:0.0.307
+
 docker pull registry.cn-beijing.aliyuncs.com/surenpi/jnlp-slave:3.14-1
 docker tag registry.cn-beijing.aliyuncs.com/surenpi/jnlp-slave:3.14-1 jenkinsci/jnlp-slave:3.14-1
 ```
+
+## 安装 jx
 
 获取 jx `curl -L https://github.com/jenkins-x/jx/releases/download/v1.3.8/jx-linux-amd64.tar.gz | tar xzv`
 

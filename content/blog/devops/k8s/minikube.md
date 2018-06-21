@@ -1,3 +1,8 @@
+---
+title: Minikube
+description: Minikue 安装
+---
+
 # 下载
 
 `wget https://github.com/kubernetes/minikube/releases/download/v0.26.1/minikube-linux-amd64`
