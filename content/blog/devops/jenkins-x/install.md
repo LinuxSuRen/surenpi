@@ -1,5 +1,6 @@
 ---
 title: Install
+description: Jenkins X 部署教程
 ---
 
 # 预备
