@@ -16,7 +16,7 @@ description: 一键安装 K8S
 
 # 修改配置文件
 
-使用命令 `vim ~.kube/config`，添加如下内容：
+使用命令 `vim ~/.kube/config`，添加如下内容：
 
 ```
 apiVersion: v1
