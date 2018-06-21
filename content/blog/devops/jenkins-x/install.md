@@ -41,6 +41,9 @@ docker tag registry.cn-hangzhou.aliyuncs.com/surenpi/builder-maven:0.0.307 docke
 
 docker pull registry.cn-beijing.aliyuncs.com/surenpi/jnlp-slave:3.14-1
 docker tag registry.cn-beijing.aliyuncs.com/surenpi/jnlp-slave:3.14-1 jenkinsci/jnlp-slave:3.14-1
+
+docker pull registry.cn-beijing.aliyuncs.com/surenpi/defaultbackend:1.3
+docker tag registry.cn-beijing.aliyuncs.com/surenpi/defaultbackend:1.3 k8s.gcr.io/defaultbackend:1.3
 ```
 
 ## 安装 jx
