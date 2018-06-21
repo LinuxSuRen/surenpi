@@ -35,8 +35,8 @@ docker tag registry.cn-hangzhou.aliyuncs.com/surenpi/mongodb:3.4.9-r1 docker.io/
 docker pull registry.cn-beijing.aliyuncs.com/surenpi/nexus:0.0.14
 docker tag registry.cn-beijing.aliyuncs.com/surenpi/nexus:0.0.14 docker.io/jenkinsxio/nexus
 
-docker pull registry.cn-beijing.aliyuncs.com/suren-jenkinsci/jnlp-slave:3.14-1
-docker tag registry.cn-beijing.aliyuncs.com/suren-jenkinsci/jnlp-slave:3.14-1 jenkinsci/jnlp-slave:3.14-1
+docker pull registry.cn-beijing.aliyuncs.com/surenpi/jnlp-slave:3.14-1
+docker tag registry.cn-beijing.aliyuncs.com/surenpi/jnlp-slave:3.14-1 jenkinsci/jnlp-slave:3.14-1
 ```
 
 获取 jx `curl -L https://github.com/jenkins-x/jx/releases/download/v1.3.8/jx-linux-amd64.tar.gz | tar xzv`
