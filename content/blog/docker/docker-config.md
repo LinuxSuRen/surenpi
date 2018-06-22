@@ -17,14 +17,20 @@ Environment="HTTP_PROXY=http://ip:port"
 
 # Insecure
 
+`vim /etc/systemd/system/docker.service.d/docker.conf`
+
 ```
 [Service]
-ExecStart=/usr/bin/docker daemon -H fd:// --insecure-registry 10.101.101.45:5000
+ExecStart=/usr/bin/dockerd -H fd:// --insecure-registry 10.101.101.45:5000
 ```
 
 `vim /etc/docker/daemon.json`
 
 `"insecure-registries" : ["192.168.0.180"]`
+
+Ubuntu 下修改配置文件 `vim /etc/default/docker` 添加如下内容：
+
+`DOCKER_OPTS="$DOCKER_OPTS --insecure-registry registry_server_name/ip:port"`
 
 # User
 
