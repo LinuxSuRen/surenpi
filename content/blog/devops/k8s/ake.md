@@ -7,6 +7,8 @@ description: 一键安装 K8S
 
 执行命令 `yum upgrade libsepol libsemanage libselinux libsemanage libselinux audit-libs`
 
+`sudo apt-get update && apt-get install python -y`
+
 # 安装 AKE
 
 通过命令 `wget http://get.alauda.cn/deploy/ake/ake && chmod u+x ake && ./ake up` 会安装 AKE 以及 Kubernetes。

@@ -12,6 +12,8 @@ Jenkins X 是基于容器化来实现的 CI/CD 平台，因此，我们首先需
 安装 Git `yum install git -y`
 安装 Maven `yum install maven -y`
 
+`sudo apt-get install maven -y`
+
 # 拉取镜像 
 
 ```
@@ -48,7 +50,8 @@ docker tag registry.cn-beijing.aliyuncs.com/surenpi/defaultbackend:1.3 k8s.gcr.i
 
 ## 安装 jx
 
-获取 jx `curl -L https://github.com/jenkins-x/jx/releases/download/v1.3.8/jx-linux-amd64.tar.gz | tar xzv`
+获取 jx `curl -LO https://github.com/jenkins-x/jx/releases/download/$(curl -s https://api.github.com/repos/jenkins-x/jx/releases/latest | grep tag_name | cut -d '"' -f 4)/jx-linux-amd64.tar.gz | tar xzv`
+
 
 移动到系统目录中 `mv jx /usr/local/bin`
 
