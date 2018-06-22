@@ -12,7 +12,7 @@ Jenkins X 是基于容器化来实现的 CI/CD 平台，因此，我们首先需
 安装 Git `yum install git -y`
 安装 Maven `yum install maven -y`
 
-`sudo apt-get install maven -y`
+`sudo apt-get install maven make -y`
 
 # 拉取镜像 
 
