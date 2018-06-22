@@ -14,3 +14,9 @@ description: Kubectl 的使用
 # 查看上下文
 
 `kubectl config current-context`
+
+# 导出用户证书
+
+```
+curl https://raw.githubusercontent.com/LinuxSuRen/getGo/master/k8s-create-user.sh | bash
+```
