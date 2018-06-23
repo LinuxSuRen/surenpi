@@ -14,6 +14,12 @@ Jenkins X 是基于容器化来实现的 CI/CD 平台，因此，我们首先需
 
 `sudo apt-get install maven make -y`
 
+为了方便，我们把当前用户加入 Docker 用户组 `sudo gpasswd -a ${USER} docker`
+
+重启 Docker 服务 `sudo service docker restart`
+
+添加权限 `sudo chmod a+rw /var/run/docker.sock`
+
 # 拉取镜像 
 
 ```
@@ -46,6 +52,9 @@ docker tag registry.cn-beijing.aliyuncs.com/surenpi/jnlp-slave:3.14-1 jenkinsci/
 
 docker pull registry.cn-beijing.aliyuncs.com/surenpi/defaultbackend:1.3
 docker tag registry.cn-beijing.aliyuncs.com/surenpi/defaultbackend:1.3 k8s.gcr.io/defaultbackend:1.3
+
+docker pull registry.cn-beijing.aliyuncs.com/surenpi/monocular-ui:v0.6.1
+docker tag registry.cn-beijing.aliyuncs.com/surenpi/monocular-ui:v0.6.1 bitnami/monocular-ui:v0.6.1
 ```
 
 ## 安装 jx
@@ -56,3 +65,7 @@ docker tag registry.cn-beijing.aliyuncs.com/surenpi/defaultbackend:1.3 k8s.gcr.i
 移动到系统目录中 `mv jx /usr/local/bin`
 
 安装 jx `jx install --username suren --provider=kubernetes  --on-premise`
+
+# 连接远程
+
+如果我们想要从本地连接远程的 Kubernetes 集群的话，需要[导出用户证书](/blog/devops/k8s/kuberctl/)。

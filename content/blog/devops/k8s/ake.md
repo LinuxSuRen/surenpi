@@ -7,7 +7,7 @@ description: 一键安装 K8S
 
 执行命令 `yum upgrade libsepol libsemanage libselinux libsemanage libselinux audit-libs`
 
-`sudo apt-get update && apt-get install python -y`
+`sudo apt-get update && sudo apt-get install python -y`
 
 # 安装 AKE
 

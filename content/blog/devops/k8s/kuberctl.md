@@ -20,3 +20,8 @@ description: Kubectl 的使用
 ```
 curl https://raw.githubusercontent.com/LinuxSuRen/getGo/master/k8s-create-user.sh | bash
 ```
+
+或者也可以设置参数
+```
+wget https://raw.githubusercontent.com/LinuxSuRen/getGo/master/k8s-create-user.sh && chmod u+x *.sh
+```
