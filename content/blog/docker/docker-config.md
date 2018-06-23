@@ -21,6 +21,7 @@ Environment="HTTP_PROXY=http://ip:port"
 
 ```
 [Service]
+ExecStart=
 ExecStart=/usr/bin/dockerd -H fd:// --insecure-registry 10.101.101.45:5000
 ```
 
