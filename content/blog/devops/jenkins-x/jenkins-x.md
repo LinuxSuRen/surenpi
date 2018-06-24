@@ -10,3 +10,5 @@ description: Jenkins X 特性介绍
 # DevPod
 
 目前只支持 overlay 类型的 Docker 驱动，通过命令 `docker info | grep "Storage Driver"` 查看 Docker 当前支持的类型。
+
+因此，我们需要的 Docker 版本为 `v17.06`。

@@ -1,3 +1,8 @@
+---
+title: user
+description: user
+---
+
 # 添加用户
 
 `useradd user-name` 添加用户 `user-name` ，并没有添加用户目录、密码、shell等

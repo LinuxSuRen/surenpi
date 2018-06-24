@@ -11,6 +11,8 @@ description: 一键安装 K8S
 
 # 安装 AKE
 
+`['1.12.6', '17.03.0', '17.03.1', '17.03.2', '17.12.0']`
+
 通过命令 `wget http://get.alauda.cn/deploy/ake/ake && chmod u+x ake && ./ake up` 会安装 AKE 以及 Kubernetes。
 
 如果发生错误的，需要执行该命令来清理 `curl http://get.alauda.cn/deploy/ake/cleanup | bash`
