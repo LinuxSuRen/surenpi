@@ -18,12 +18,9 @@ description: Kubectl 的使用
 # 导出用户证书
 
 ```
-curl https://raw.githubusercontent.com/LinuxSuRen/getGo/master/k8s-create-user.sh | bash
+curl https://raw.githubusercontent.com/LinuxSuRen/getGo/master/k8s-create-user.sh | bash -s username
 ```
 
-或者也可以设置参数
-```
-wget https://raw.githubusercontent.com/LinuxSuRen/getGo/master/k8s-create-user.sh && chmod u+x *.sh
-```
+# Troubleshooting
 
 journalctl -u kubelet -f

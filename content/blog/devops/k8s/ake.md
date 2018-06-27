@@ -9,15 +9,11 @@ description: 一键安装 K8S
 
 `sudo apt-get update && sudo apt-get install python -y`
 
-# 安装 AKE
+# 安装
 
-`['1.12.6', '17.03.0', '17.03.1', '17.03.2', '17.12.0']`
+Support Docker versions `['1.12.6', '17.03.0', '17.03.1', '17.03.2', '17.12.0']`
 
-通过命令 `wget http://get.alauda.cn/deploy/ake/ake && chmod u+x ake && ./ake up` 会安装 AKE 以及 Kubernetes。
-
-`ake up --cert-sans k1.surenpi.com`
-
-如果发生错误的，需要执行该命令来清理 `curl http://get.alauda.cn/deploy/ake/cleanup | bash`
+通过命令 `curl https://raw.githubusercontent.com/LinuxSuRen/getGo/master/jx-k8s.sh | bash -s ip` 安装 Kubernetes
 
 
 # 修改配置文件
