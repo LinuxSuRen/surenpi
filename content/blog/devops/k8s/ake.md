@@ -15,6 +15,8 @@ description: 一键安装 K8S
 
 通过命令 `wget http://get.alauda.cn/deploy/ake/ake && chmod u+x ake && ./ake up` 会安装 AKE 以及 Kubernetes。
 
+`ake up --cert-sans k1.surenpi.com`
+
 如果发生错误的，需要执行该命令来清理 `curl http://get.alauda.cn/deploy/ake/cleanup | bash`
 
 

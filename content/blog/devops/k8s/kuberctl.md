@@ -25,3 +25,5 @@ curl https://raw.githubusercontent.com/LinuxSuRen/getGo/master/k8s-create-user.s
 ```
 wget https://raw.githubusercontent.com/LinuxSuRen/getGo/master/k8s-create-user.sh && chmod u+x *.sh
 ```
+
+journalctl -u kubelet -f

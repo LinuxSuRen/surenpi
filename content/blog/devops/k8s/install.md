@@ -60,3 +60,10 @@ docker tag registry.cn-hangzhou.aliyuncs.com/surenpi/k8s-dns-dnsmasq-nanny-amd64
 ```
 
 https://www.cnblogs.com/ericnie/p/7749588.html
+
+
+/etc/kubernetes/bootstrap-kubelet.conf
+
+`kubectl  get cm -n kube-public cluster-info -o yaml`
+
+`kubectl label nodes 10-19-169-138 name=master`
