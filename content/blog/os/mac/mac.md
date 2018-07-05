@@ -1,6 +1,23 @@
 ---
 title: Mac 快捷键
+description: Mac 快捷键
 ---
+
+# 按键符号
+
+⌘(command)
+
+⌥(option)
+
+⇧(shift)
+
+⇪(caps lock)
+
+⌃(control)
+
+↩(return)
+
+⌅(enter)
 
 # 快捷键
 
