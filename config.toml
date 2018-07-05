@@ -38,6 +38,17 @@ googleAnalytics = "UA-4216293-5"
   weight = 1300
   identifer = "network"
   url = "/blog/network"
+[[menu.blog]]
+  name = "OS"
+  weight = 1400
+  identifer = "os"
+  url = "/blog/os"
+
+[[menu.linux]]
+  name = "Linux"
+  weight = 14000
+  identifer = "Linux"
+  url = "/blog/os/linux"
 	
 # translation
 [[menu.translation]]

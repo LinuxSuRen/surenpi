@@ -1,5 +1,5 @@
 ---
-title: "DevOps"
+title: "DevOps Article"
 menu:
   blog
 ---

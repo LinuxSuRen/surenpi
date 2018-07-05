@@ -1,3 +1,8 @@
+---
+title: Git Remote
+description: Git 远程库操作
+---
+
 # remote
 `git remote show origin` 可以查看仓库的分支信息,虽然另外一条命令 `git branch -a` 能看到所有的远程分支列表，但缺点是无法看到哪些分支是被删除了的。
 
