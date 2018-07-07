@@ -8,7 +8,7 @@
 
 `mvn jenkins-dev:run`
 
-`mvn jenkins-dev:run -Djenkins.install.runSetupWizard=true -DJENKINS_hOME=.` 需要在目录 `war` 下运行，并保证没有 `work` 目录
+`mvn jenkins-dev:run -Djenkins.install.runSetupWizard=true -DJENKINS_HOME=.` 需要在目录 `war` 下运行，并保证没有 `work` 目录
 
 # 跳过测试
 
