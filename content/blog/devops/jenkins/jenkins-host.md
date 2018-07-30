@@ -23,3 +23,5 @@
 等一切就绪，你的插件要发布时，只要执行下面的命令：
 
 `mvn release:prepare release:perform`
+
+跳过测试 `mvn -Darguments="-DskipTests" release:prepare`
