@@ -1,7 +1,7 @@
-
-# 流水线
-
-本文介绍 Jenkins 的脚本式流水线。
+---
+title: 脚本式流水线
+description: 本文介绍 Jenkins 的脚本式流水线
+---
 
 ## 触发器
 
