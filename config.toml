@@ -62,7 +62,7 @@ googleAnalytics = "UA-4216293-5"
   weight = 3100
   identifier = "suren"
   post = "external"
-  url = "http://surenpi.com"
+  url = "http://blog.surenpi.com"
 
 [outputs]
 home = [ "HTML", "RSS", "REDIR", "HEADERS" ]
