@@ -45,3 +45,6 @@ no_proxy=*.baidu.com,localhost,127.0.0.1,192.18.*.*,
 
 export HTTP_PROXY HTTPS_PROXY no_proxy
 ```
+# 参考
+
+[如何给 Git 配置代理](language/golang/go/)
