@@ -11,8 +11,6 @@ import './smoothscroll.js'
 
 import './nojs.js'
 
-
-
 // TO use Jquery, just call the modules you want
 // var $ = require('jquery/src/core');
 // require('jquery/src/core/init');

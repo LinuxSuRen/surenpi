@@ -65,7 +65,7 @@ googleAnalytics = "UA-4216293-5"
   url = "http://blog.surenpi.com"
 
 [outputs]
-home = [ "HTML", "RSS", "REDIR", "HEADERS" ]
+home = [ "HTML", "RSS", "REDIR", "HEADERS", "JSON" ]
 section = [ "HTML", "RSS"]
 
 [mediaTypes]
