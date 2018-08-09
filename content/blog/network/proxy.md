@@ -47,4 +47,4 @@ export HTTP_PROXY HTTPS_PROXY no_proxy
 ```
 # 参考
 
-[如何给 Git 配置代理](language/golang/go/)
+[如何给 Git 配置代理](/blog/language/golang/go/)
