@@ -10,3 +10,7 @@ description: Find
 # 查找文件夹
 
 `find ~ -type d -name jx`
+
+# 查找并执行命令
+
+`find . -name *.java | xargs echo` 查找完后执行
