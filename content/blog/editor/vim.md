@@ -29,7 +29,7 @@ set ignorecase
 set colorcolumn=+1
 set tabstop=4
 set shiftwidth=4
-set expandtab
+set expandtab '把tab转为空格
 set backspace=indent,start,eol
 set showmatch
 set matchtime=1
