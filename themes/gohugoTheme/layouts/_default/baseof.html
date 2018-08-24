@@ -44,7 +44,7 @@
   <body class="ma0 sans-serif bg-primary-color-light{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
     {{ block "nav" . }}{{ partial "site-nav.html" . }}{{ end }}
     {{ block "header" . }}{{ end }}
-    <main role="main" class="content-with-sidebar min-vh-100 pb7 pb0-ns" style="display:none">
+    <main role="main" class="content-with-sidebar min-vh-100 pb7 pb0-ns">
       {{ block "main" . }}{{ end }}
     </main>
 
