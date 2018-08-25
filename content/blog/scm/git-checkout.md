@@ -3,14 +3,17 @@ title: 如何操作 Git 分支
 description: Git 有很强大的分支支持
 ---
 
-# checkout
-该命令可以切换分支、新建分支等。
+# 检出分支
 
-# 切换分支
+`git checkout --track origin/fea/test` 检出 git 远程分支
 
 # 切换标签
 
-# 新建分支
+`git checkout master` 切换到 master 分支
+
+# 删除分支
+
+`git branch --delete abc` 删除分支 abc
 
 # 放弃修改
 
