@@ -14,3 +14,7 @@ description: Find
 # 查找并执行命令
 
 `find . -name *.java | xargs echo` 查找完后执行
+
+# 查找特定文件
+
+`cp $(find core/src/main/resources -type f -name "*_zh_CN.properties") /tmp`
