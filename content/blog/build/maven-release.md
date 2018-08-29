@@ -19,7 +19,7 @@ sonatype对发布的jar有一些要求，必须包括：源码（既然是开源
 签名
 参考这里安装gpg。完成后，按照下面的步骤生成密钥。
 
-gpg --gen-key 生成密钥，成功后，会有类似如下的输出。
+`gpg --gen-key` 生成密钥，成功后，会有类似如下的输出。
 
 gpg: key 69EC4448C6CE32EB marked as ultimately trusted
 
@@ -29,6 +29,7 @@ gpg: directory '/Users/mac/.gnupg/openpgp-revocs.d' created
 
 修改settings.xml
 增加账户信息：
+
 ```
 <server>
   <id>hello</id>
@@ -49,6 +50,7 @@ gpg: directory '/Users/mac/.gnupg/openpgp-revocs.d' created
   </properties>
 </profile>
 ```
+
 需要注意的是，gpg有两个版本gpg和gpg2。maven的gpg插件，默认使用gpg命令来作签名，如果你需要使用gpg2的话，可以在参考上面的配置来修改（gpg.executable）。另外，上面的配置中，直接写了密钥，这样可能是不安全的。你可以在配置文件中配置keyname，如下所示：
 
 <gpg.keyname>69EC4448C6CE32EB</gpg.keyname>
@@ -68,7 +70,9 @@ gpg: directory '/Users/mac/.gnupg/openpgp-revocs.d' created
     </snapshotRepository>
 </distributionManagement>
 ```
+
 上面的配置，描述了版本（release、snapshot）的发布地址。另外，这里的id需要和settings.xml中server的id保持一致。然后，添加生成javaDoc、源码等的Maven插件：
+
 ```
 <profiles>
 <profile>

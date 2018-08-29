@@ -25,6 +25,8 @@ Mac下安装 `brew install gpg` 或者从 https://gpgtools.org/ 下载
 
 `gpg --import` 密钥文件
 
+`gpg --list-keys` 列出密钥
+
 `gpg --delete-secret-key hello`
 
 `gpg --delete-key hello`
