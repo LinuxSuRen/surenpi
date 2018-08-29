@@ -20,3 +20,5 @@ description: Jenkins UI 介绍
 <c:select/>
 </j:jelly>
 ```
+
+https://ci.adoptopenjdk.net/
