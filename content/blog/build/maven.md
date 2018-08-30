@@ -1,12 +1,15 @@
 ---
 title: Maven
+description: Maven 是非常流行的一个 Java 持续构建工具
 ---
 
 # 构建
 
-跳过JavaDoc `-Dmaven.javadoc.skip=true`
+跳过JavaDoc `mvn package -Dmaven.javadoc.skip=true`
 
-跳过测试 `-DskipTests=true`
+跳过测试 `mvn package -DskipTests=true`
+
+`mvn package -U` 强制更新快照版本的依赖
 
 # 部署
 
@@ -35,3 +38,17 @@ Alice->Bob: Hello Bob, how are you?
 Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!
 ```
+
+# 查看依赖
+
+`mvn dependency:tree` 查看依赖树
+
+`mvn dependency:resolve`
+
+`mvn dependency:analyze` 依赖分析
+
+`mvn help:effective-pom`
+
+# 调试
+
+`mvn package -X` 查看调试信息
