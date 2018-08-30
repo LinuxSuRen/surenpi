@@ -15,6 +15,10 @@ description: SSH
 
 2. 在服务器端~/.ssh/authorized_keys文件中添加id_rsa.pub的内容
 
+# 证书登陆
+
+`ssh -i test.pem root@localhost`
+
 # 服务重启
 
 `service ssh restart`
