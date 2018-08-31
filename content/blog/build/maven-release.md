@@ -161,7 +161,7 @@ gpg: directory '/Users/mac/.gnupg/openpgp-revocs.d' created
 
 在项目根目录下（根据需要自行选择），执行命令mvn deploy
 
-如果没有任何报错的话，会先把jar等文件上传（upload）。等上传完成后，你需要登录https://oss.sonatype.org ，点击左侧菜单Staging Repositories。从列表中找到你刚刚上传的工程，选中后点击Close。如果你不想每次手动完成该步骤，可以在pom.xml中添加下面的插件配置来实现自动化：
+如果没有任何报错的话，会先把jar等文件上传（upload）。等上传完成后，你需要登录[https://oss.sonatype.org](https://oss.sonatype.org) ，点击左侧菜单Staging Repositories。从列表中找到你刚刚上传的工程，选中后点击Close。如果你不想每次手动完成该步骤，可以在pom.xml中添加下面的插件配置来实现自动化：
 ```
 <plugin>
   <groupId>org.sonatype.plugins</groupId>
