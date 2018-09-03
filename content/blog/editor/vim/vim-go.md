@@ -10,6 +10,17 @@ description: VIM plugin for GoLang
 `go get -v github.com/golang/lint/golint`
 `go get -v github.com/davidrjenni/reftools/cmd/fillstruct`
 
+# Action
+
+```
+:GoRun
+:GoBuild
+:GoTest
+:GoDef
+:GoRename
+```
+
 # Reference
 
 [vim-go](https://github.com/fatih/vim-go)
+[vim-go-tutorial](https://github.com/fatih/vim-go-tutorial)
