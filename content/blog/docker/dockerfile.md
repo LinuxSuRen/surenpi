@@ -19,3 +19,7 @@
 # EXPOSE
 
 指定容器要暴露的端口，例如：`EXPOSE 9898`。在执行容器时，可以通过参数来自动暴露给一个本地的随机端口，例如：`docker run -P sample`
+
+# CMD
+
+CMD ["echo", "hello"]
