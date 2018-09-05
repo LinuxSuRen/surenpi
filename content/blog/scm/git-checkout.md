@@ -11,16 +11,6 @@ description: Git 有很强大的分支支持
 
 `git checkout master` 切换到 master 分支
 
-# 删除分支
-
-`git branch --delete abc` 删除分支 abc
-
-# 放弃修改
-
-`git checkout somefile` 通过该命令，可以放弃对某个文件的修改。
-
-* 场景1 当我使用命令 `git pull` 更新代码时，发现由于和本地对某个文件的修改发生冲突，而且确定可以放弃本地的修改时。
-
 # 标签
 
 `git tag v0.1.2-light`
