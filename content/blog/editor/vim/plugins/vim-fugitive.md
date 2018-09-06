@@ -11,9 +11,11 @@ description: Vim-Fugitive
 
 `:Gstatus` 查看变更状态，等同于 `git status`
 
-`:Gcommit` 提交代码，等同于 `git commit`
+`:Gcommit %` 提交代码，等同于 `git commit`
 
 `:Gpush` 推送代码
+
+`:Gpush -u origin test` 推送新的分支
 
 `:Gpull` 拉取代码
 
