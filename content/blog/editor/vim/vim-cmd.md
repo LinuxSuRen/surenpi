@@ -47,6 +47,12 @@ description: VIM Command
 
 `:left` 居左对齐 `:right` 居右对齐
 
+## 数字
+
+`ctrl+a` 数字+1
+
+`ctrl+x` 数字-1
+
 ## 其他
 
 `ctrl+g` 显示当前文件路径
