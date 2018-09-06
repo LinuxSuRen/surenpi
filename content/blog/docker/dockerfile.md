@@ -20,6 +20,10 @@
 
 指定容器要暴露的端口，例如：`EXPOSE 9898`。在执行容器时，可以通过参数来自动暴露给一个本地的随机端口，例如：`docker run -P sample`
 
+# RUN
+
+RUN 为 Docker 镜像在构建时执行的命令
+
 # CMD
 
-CMD ["echo", "hello"]
+CMD 为 Docker 镜像在运行时的执行入口，例如：`CMD ["echo", "hello"]`
