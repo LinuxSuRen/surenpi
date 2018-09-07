@@ -36,3 +36,9 @@ description: Go Template
   {{ $key }} {{ $value }}
 {{ end }}
 ```
+
+## 数组
+
+```
+{{ index "abc" 0 }}
+```
