@@ -13,6 +13,8 @@ description: Git Branch
 
 `git branch -v | grep gone | awk '//{print $1}' | xargs git branch -d` 删除远程分支不存在的`
 
+`git remote prune origin`
+
 # 拉取分支
 
 `git checkout -b abc` 基于当前分支创建新分支
