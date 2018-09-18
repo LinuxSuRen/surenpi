@@ -21,6 +21,10 @@ description: Jenkins 插件调试
 
 `mvn hpi:run -Djenkins.install.runSetupWizard=true`
 
+# 指定 Jenkins 版本
+
+`mvn hpi:run -Djenkins.version=2.121.1`
+
 # 参考
 
 [maven-hpi-plugin](https://jenkinsci.github.io/maven-hpi-plugin/run-mojo.html)
