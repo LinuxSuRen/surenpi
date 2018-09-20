@@ -22,3 +22,9 @@ description: Jenkins UI 介绍
 ```
 
 https://ci.adoptopenjdk.net/
+
+# 静态资源文件
+
+当我们需要在 Jenkins 插件中添加静态文件时，可以把静态访问放到 `webapp` 下。然后，通过类似下面的地址访问：
+
+`http://localhost:8080/jenkins/plugin/sample-plugin-id/test.css`
