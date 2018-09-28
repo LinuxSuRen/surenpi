@@ -23,8 +23,8 @@ description: 本文介绍如何把一个 Jenkins 插件托管到 Jenkins 的 Git
 
 # 发布
 
-等一切就绪，你的插件要发布时，只要执行下面的命令：
-
-`mvn release:prepare release:perform`
+等一切就绪，你的插件要发布时，只要执行 `mvn release:prepare release:perform`
 
 跳过测试 `mvn -Darguments="-DskipTests" release:prepare`
+
+执行发布准备而且无需输入参数 `mvn -Darguments="-DskipTests" release:prepare -B`
