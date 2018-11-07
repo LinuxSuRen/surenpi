@@ -10,4 +10,5 @@ description: Ingress
 ```
 ingress.kubernetes.io/proxy-body-size: "0"
 nginx.ingress.kubernetes.io/proxy-body-size: "0"
+nginx/client_max_body_size: "0"
 ```

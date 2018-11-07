@@ -24,3 +24,7 @@ curl https://raw.githubusercontent.com/LinuxSuRen/getGo/master/k8s-create-user.s
 # Troubleshooting
 
 journalctl -u kubelet -f
+
+# Delete pod
+
+`kubectl get pods -a | grep Error | cut -d' ' -f 1 | xargs kubectl delete pod`
