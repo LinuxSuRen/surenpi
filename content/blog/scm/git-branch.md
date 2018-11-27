@@ -3,7 +3,10 @@ title: Git Branch
 description: Git Branch
 ---
 
+# 切换标签
+
 `git branch` 列出本地分支
+`git checkout master` 切换到本地 master 分支
 
 # 删除分支
 

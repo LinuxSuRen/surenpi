@@ -1,15 +1,7 @@
 ---
-title: 如何操作 Git 分支
-description: Git 有很强大的分支支持
+title: Git 标签（tag）
+description: Git 标签（tag）的相关操作
 ---
-
-# 检出分支
-
-`git checkout --track origin/fea/test` 检出 git 远程分支
-
-# 切换标签
-
-`git checkout master` 切换到 master 分支
 
 # 标签
 
@@ -28,3 +20,7 @@ description: Git 有很强大的分支支持
 把所有的标签一次性发布 `git push origin --tags`
 
 git可以在同一个提交上打多个名称不一样的标签
+
+# 获取远程标签
+
+`git fetch --all --tags` 这样会获取所有远程库的所有标签（tag）
