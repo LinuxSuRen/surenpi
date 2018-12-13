@@ -24,3 +24,7 @@ git可以在同一个提交上打多个名称不一样的标签
 # 获取远程标签
 
 `git fetch --all --tags` 这样会获取所有远程库的所有标签（tag）
+
+# 删除远程标签
+
+`git push --delete origin tagname` 删除远程的指定标签
