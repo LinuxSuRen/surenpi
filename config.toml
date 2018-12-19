@@ -98,3 +98,9 @@ weight = 100
 name  = "date"
 weight = 10
 pattern = "2006"
+
+[params]
+## Gh repo for site footer (include trailing slash)
+ghrepo = "https://github.com/linuxsuren/surenpi/"
+## GH Repo for filing a new issue
+github_repo = "https://github.com/linuxsuren/surenpi/issues/new"
