@@ -8,7 +8,7 @@ other = "查看更多"
 other = "此页面上的内容"
 
 [see-also]
-other = "参照"
+other = "参考"
 
 [last-updated]
 other = "上次更新："
@@ -27,3 +27,6 @@ other = "快速入门"
 
 [improve-this-page]
 other = "改善此页"
+
+[see-more]
+other = "查看更多"
