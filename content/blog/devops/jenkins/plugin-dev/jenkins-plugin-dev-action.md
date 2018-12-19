@@ -1,6 +1,7 @@
 ---
 title: Action
 description: Jenkins Plugin Action
+keywords: jenkins-plugin
 ---
 
 本文介绍如果开发一个 Jenkins 的后端，也就是 Action。

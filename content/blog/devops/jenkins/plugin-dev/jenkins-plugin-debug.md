@@ -1,6 +1,7 @@
 ---
 title: Jenkins 插件调试
 description: Jenkins 插件调试
+keywords: jenkins-plugin
 ---
 
 # 运行

@@ -1,6 +1,7 @@
 ---
 title: CLI
 description: Command Line Interface
+keywords: jenkins-plugin
 ---
 
 # 扩展点

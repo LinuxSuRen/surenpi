@@ -1,6 +1,7 @@
 ---
 title: 脚本式流水线
 description: 本文介绍 Jenkins 的脚本式流水线
+keywords: jenkins, pipeline
 ---
 
 ## 触发器

@@ -1,6 +1,7 @@
 ---
 title: Jenkins UI
 description: Jenkins UI 介绍
+keywords: jenkins-plugin
 ---
 
 # 按钮

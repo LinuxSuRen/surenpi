@@ -1,6 +1,7 @@
 ---
 title: Jenkins JUnit
 description: Jenkins JUnit
+keywords: jenkins
 ---
 
 # Assert
