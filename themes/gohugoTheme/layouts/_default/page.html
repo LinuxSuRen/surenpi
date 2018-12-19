@@ -35,3 +35,15 @@
   {{- partial "docs/functions-signature.html" . -}}
   {{ .Content }}
 </div>
+
+{{ if .Site.Params.Comments.Utterances.Enable }}
+{{ if ne .Params.comment false }}
+<script src="https://utteranc.es/client.js"
+        repo="{{ .Site.Params.Comments.Utterances.Github.repository }}"
+        issue-term="{{ .Site.Params.Comments.Utterances.IssueTerm }}"
+        theme="github-light"
+        crossorigin="{{ .Site.Params.Comments.Utterances.Github.username }}"
+        async>
+</script>
+{{ end }}
+{{ end }}
