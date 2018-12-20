@@ -2,6 +2,7 @@
 title: Jenkins
 description: Jenkins 是一个开源的 CI 服务
 keywords: jenkins
+categories: [cicd]
 ---
 
 本文介绍 [Jenkins](https://jenkins.io/zh) 相关的内容，包括：如何启动、配置等等。

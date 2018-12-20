@@ -23,32 +23,32 @@ googleAnalytics = "UA-4216293-5"
   url = "/opensource"
 
 # blog
-[[menu.blog]]
-  name = "DevOps"
-  weight = 1100
-  identifer = "devops"
-  url = "/blog/devops"
-[[menu.blog]]
-  name = "SCM"
-  weight = 1200
-  identifer = "scm"
-  url = "/blog/scm"
-[[menu.blog]]
-  name = "Network"
-  weight = 1300
-  identifer = "network"
-  url = "/blog/network"
-[[menu.blog]]
-  name = "OS"
-  weight = 1400
-  identifer = "os"
-  url = "/blog/os"
+# [[menu.blog]]
+#   name = "DevOps"
+#   weight = 1100
+#   identifer = "devops"
+#   url = "/blog/devops"
+# [[menu.blog]]
+#   name = "SCM"
+#   weight = 1200
+#   identifer = "scm"
+#   url = "/blog/scm"
+# [[menu.blog]]
+#   name = "Network"
+#   weight = 1300
+#   identifer = "network"
+#   url = "/blog/network"
+# [[menu.blog]]
+#   name = "OS"
+#   weight = 1400
+#   identifer = "os"
+#   url = "/blog/os"
 
-[[menu.linux]]
-  name = "Linux"
-  weight = 14000
-  identifer = "Linux"
-  url = "/blog/os/linux"
+# [[menu.linux]]
+#   name = "Linux"
+#   weight = 14000
+#   identifer = "Linux"
+#   url = "/blog/os/linux"
 	
 # translation
 [[menu.translation]]
