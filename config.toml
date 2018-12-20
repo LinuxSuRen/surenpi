@@ -6,6 +6,8 @@ theme = "gohugoTheme"
 
 googleAnalytics = "UA-4216293-5"
 
+# sectionPagesMenu = "blog"
+
 [[menu.global]]
   name = "博客"
   weight = 100
@@ -50,11 +52,11 @@ googleAnalytics = "UA-4216293-5"
 #   url = "/blog/os/linux"
 	
 # translation
-[[menu.translation]]
-  name = "Jenkins"
-	weight = 2100
-	identifier = "jenkins"
-	url = "/jenkins"
+# [[menu.translation]]
+#   name = "Jenkins"
+# 	weight = 2100
+# 	identifier = "jenkins"
+# 	url = "/jenkins"
 
 [[menu.global]]
   name = "SuRen"
