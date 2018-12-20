@@ -22,7 +22,6 @@ googleAnalytics = "UA-4216293-5"
   identifier = "opensource"
   url = "/opensource"
 
-# blog
 # [[menu.blog]]
 #   name = "DevOps"
 #   weight = 1100
