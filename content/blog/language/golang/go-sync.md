@@ -1,6 +1,7 @@
 ---
 title: Sync
 description: Sync
+keywords: golang
 ---
 
 ```

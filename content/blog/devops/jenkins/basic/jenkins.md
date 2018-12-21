@@ -15,6 +15,8 @@ tags:
 
 Jenkins 支持几种安装（启动）方式：
 
+{{< youtube EtlhC3vw8pA >}}
+
 ## War
 
 由于 Jenkins 是用 Java 语言来开发的，自然就会有 War 的打包方式。你需要首先在[下载页面](https://jenkins.io/zh/download/)，选择一个版本。

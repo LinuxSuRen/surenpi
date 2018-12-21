@@ -10,6 +10,11 @@
 	{{end}}
 	<div class="code-copy-content nt3" {{with .Get "download"}}id="{{.}}"{{end}}>
 		{{- .Inner -}}
+		{{ $lang := .Get "language" }}
+		{{- with .Get "path" -}}
+		{{ $file := . | readFile }}
+		{{ (print "```" $lang "\n" $file "\n```") | markdownify }}
+		{{- end -}}
 	</div>
 
 </div>
