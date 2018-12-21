@@ -1,7 +1,7 @@
 ---
 title: Jenkins 插件托管
 description: 本文介绍如何把一个 Jenkins 插件托管到 Jenkins 的 Github 上。
-keywords: jenkins
+keywords: jenkins hosting
 ---
 
 # 创建库

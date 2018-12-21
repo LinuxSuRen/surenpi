@@ -1,6 +1,8 @@
 ---
 title: Update Center
-descript: Update Center
+description: Update Center
+keywords: plugin update
+draft: true
 ---
 
 构建项目 `mvn package appassembler:assemble -DskipTests`

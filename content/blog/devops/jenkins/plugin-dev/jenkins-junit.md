@@ -1,7 +1,8 @@
 ---
 title: Jenkins JUnit
 description: Jenkins JUnit
-keywords: jenkins
+keywords: jenkins junit
+draft: true
 ---
 
 # Assert
