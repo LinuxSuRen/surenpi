@@ -5,4 +5,4 @@ keywords: golang json
 references: https://golang.org/pkg/encoding/json/
 ---
 
-{{< code path="static/codes/golang/json/main.go" language="golang" >}}
+{{< exfile "/static/codes/golang/json/main.go" "golang" >}}
