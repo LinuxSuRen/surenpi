@@ -1,6 +1,6 @@
 ---
 title: split
-description: spli
+description: split
 ---
 
 # 切割文件
