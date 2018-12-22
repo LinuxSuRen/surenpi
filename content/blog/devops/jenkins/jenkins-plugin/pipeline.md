@@ -10,6 +10,8 @@ keywords: pipeline plugin
 
 在插件管理界面中搜索 `workflow-aggregator` 后，勾选点击安装。
 
+{{< youtube oMU8ZGtV0QY >}}
+
 # 结构
 
 {{< exfile "/static/codes/jenkinsfile/simple.groovy" "groovy" >}}
