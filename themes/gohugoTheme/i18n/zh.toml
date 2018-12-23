@@ -30,3 +30,9 @@ other = "改善此页"
 
 [see-more]
 other = "查看更多"
+
+[source-file]
+other = "原文件"
+
+[copy]
+other = "拷贝"

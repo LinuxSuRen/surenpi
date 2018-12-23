@@ -30,3 +30,9 @@ other = "Improve this page"
 
 [see-more]
 other = "See More"
+
+[source-file]
+other = "Source"
+
+[copy]
+other = "Copy"
