@@ -23,6 +23,8 @@ Jenkins 的节点，通常可以配置如下属性：
 
 Jenkins 支持多种与节点通信的方式。
 
+{{< youtube Y9Aa1U3wJrI >}}
+
 ## JNLP
 
 默认支持。
