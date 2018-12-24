@@ -1,7 +1,8 @@
 ---
 title: Jenkins 插件扩展点
 description: Jenkins 插件扩展点
-keywords: jenkins-plugin
+keywords: jenkins plugin extension
+toc: true
 ---
 
 # 接口

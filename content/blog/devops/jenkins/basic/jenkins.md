@@ -2,6 +2,8 @@
 title: Jenkins
 description: Jenkins 是一个开源的 CI 服务
 keywords: jenkins
+author: linuxsuren
+toc: true
 categories:
 - CICD
 - Jenkins

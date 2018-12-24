@@ -1,7 +1,8 @@
 ---
 title: Jenkins 插件调试
 description: Jenkins 插件调试
-keywords: jenkins-plugin
+keywords: jenkins plugin
+toc: true
 ---
 
 # 运行

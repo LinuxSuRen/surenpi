@@ -1,7 +1,8 @@
 ---
 title: Jenkins 插件开发
 description: Jenkins 插件开发教程
-keywords: jenkins-plugin
+keywords: jenkins plugin
+toc: true
 ---
 
 # 环境准备
