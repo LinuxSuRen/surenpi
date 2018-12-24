@@ -8,6 +8,8 @@ import './lazysizes.js'
 import './menutoggle.js'
 import './scrolldir.js'
 import './smoothscroll.js'
+import './autocomplete.js'
+import './lunr.js'
 
 import './nojs.js'
 
@@ -22,3 +24,7 @@ import './nojs.js'
 // And write your code
 // $('body').append('<p>Jquery is working</p>');
 //
+
+// import './search.js'
+
+// import './backtotop.js'

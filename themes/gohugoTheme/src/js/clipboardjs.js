@@ -11,8 +11,13 @@ new Clipboard('.copy', {
 });
 
 function successMessage(elem, msg) {
-  elem.setAttribute('class', 'copied bg-primary-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2');
+  elem.setAttribute('class', 'copied bg-primary-color-dark f6 top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2');
   elem.setAttribute('aria-label', msg);
+  window.setTimeout(function(){
+    var clazz = elem.getAttribute('class');
+    clazz = clazz.replace('copied', 'copy');
+    elem.setAttribute('class', clazz);
+  }, 3000);
 }
 
 function fallbackMessage(elem, action) {
