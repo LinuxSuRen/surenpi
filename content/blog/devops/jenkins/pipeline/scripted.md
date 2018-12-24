@@ -1,7 +1,8 @@
 ---
 title: 脚本式流水线
 description: 本文介绍 Jenkins 的脚本式流水线
-keywords: jenkins, pipeline
+keywords: jenkins pipeline
+toc: true
 tags:
 - Jenkins
 - Pipeline
@@ -9,26 +10,7 @@ tags:
 
 ## 触发器
 
-```groovy
-node('local') {
-	echo 'hello'
-}
-
-properties([
-	buildDiscarder(
-		logRotator(
-			artifactDaysToKeepStr: '',
-			artifactNumToKeepStr: '',
-			daysToKeepStr: '5',
-			numToKeepStr: '10'
-		)
-	),
-	pipelineTriggers([
-		cron('H 3,12,17 * * *'),
-		scm('H 3,12,17 * * *')
-	])
-])
-```
+{{< exfile "static/codes/jenkinsfile/script-trigger.groovy" "groovy" >}}
 
 ## 参数化执行
 
