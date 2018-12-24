@@ -65,26 +65,33 @@ googleAnalytics = "UA-4216293-5"
   post = "external"
   url = "http://blog.surenpi.com"
 
+[[menu.global]]
+  name = "Jenkins 中文社区"
+  weight = 4100
+  identifier = "jenkins"
+  post = "external"
+  url = "https://jenkins-zh.github.io/wechat"
+
 [outputs]
-home = [ "HTML", "RSS", "REDIR", "HEADERS", "JSON" ]
+home = [ "HTML", "RSS", "JSON" ]
 section = [ "HTML", "RSS"]
 
-[mediaTypes]
-[mediaTypes."text/netlify"]
-suffix = ""
-delimiter = ""
+# [mediaTypes]
+# [mediaTypes."text/netlify"]
+# suffix = ""
+# delimiter = ""
 
-[outputFormats]
-[outputFormats.REDIR]
-mediatype = "text/netlify"
-baseName = "_redirects"
-isPlainText = true
-notAlternative = true
-[outputFormats.HEADERS]
-mediatype = "text/netlify"
-baseName = "_headers"
-isPlainText = true
-notAlternative = true
+# [outputFormats]
+# [outputFormats.REDIR]
+# mediatype = "text/netlify"
+# baseName = "_redirects"
+# isPlainText = true
+# notAlternative = true
+# [outputFormats.HEADERS]
+# mediatype = "text/netlify"
+# baseName = "_headers"
+# isPlainText = true
+# notAlternative = true
 
 [related]
 
