@@ -93,6 +93,9 @@ section = [ "HTML", "RSS"]
 # isPlainText = true
 # notAlternative = true
 
+[blackfriday]
+hrefTargetBlank = true
+
 [related]
 
 threshold = 80

@@ -3,6 +3,7 @@ title: Jenkins JUnit
 description: Jenkins JUnit
 keywords: jenkins junit
 draft: true
+toc: true
 ---
 
 # Assert
