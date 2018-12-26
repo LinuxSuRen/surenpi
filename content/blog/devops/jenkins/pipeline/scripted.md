@@ -8,11 +8,11 @@ tags:
 - Pipeline
 ---
 
-## 触发器
+# 触发器
 
 {{< exfile "static/codes/jenkinsfile/script-trigger.groovy" "groovy" >}}
 
-## 参数化执行
+# 参数化执行
 
 ```groovy
 properties([[$class: 'JobRestrictionProperty'],
@@ -24,42 +24,12 @@ properties([[$class: 'JobRestrictionProperty'],
 )
 ```
 
-## 循环
+# 异常
 
-```
-node('suren') {
-    def dev_path = '/opt/suren/bin'
-    def services = [
-        [
-            'name': 'admin',
-            'project': 'admin',
-            'port': '7002',
-            'jarName': 'admin'
-        ]
-    ];
-    
-    stage('Copy Artifact') {
-        for(service in services){
-            step([$class: 'CopyArtifact', fingerprintArtifacts: true, flatten: true,
-                projectName: service.project,
-                selector: [$class: 'StatusBuildSelector', stable: false],
-                target: dev_path + '/' + service.name
-            ])
-        }
-    }
-    
-    stage('Stop Service') {
-        for(service in services){
-           sh 'fuser -n tcp -k ' + service.port + ' > redirection &'
-        }
-    }
-    
-    stage('Start Service') {
-        for(service in services){
-            sh 'cd ' + pass_bin + '/' + service.name + ' && nohup nice java -server -Xms128m -Xmx384m \
-                -jar ' + service.jarName + '.jar \
-                --server.port=' + service.port + ' $> initServer.log 2>&1 &'
-        }
-    }
-}
-```
+你可以利用处理异常的方式来实现类似于[申明式流水线中]({{< ref "declarative.md" >}})的 `post`
+
+{{< exfile "static/codes/jenkinsfile/try-catch.groovy" "groovy" >}}
+
+# 循环
+
+{{< exfile "static/codes/jenkinsfile/loop.groovy" "groovy" >}}

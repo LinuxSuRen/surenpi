@@ -94,7 +94,7 @@ section = [ "HTML", "RSS"]
 # notAlternative = true
 
 [blackfriday]
-hrefTargetBlank = true
+# hrefTargetBlank = true
 
 [related]
 
