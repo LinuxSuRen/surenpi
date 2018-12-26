@@ -39,6 +39,8 @@ Jenkins 支持几种安装（启动）方式：
 
 如果希望看到具体内容[请查看这里](https://github.com/helm/charts/tree/master/stable/jenkins)。
 
+[KubeApps](https://hub.kubeapps.com/charts?q=Jenkins) 上也可以找到 Jenkins
+
 # 版本选择
 
 从 Jenkins 官网的下载页面，看到有很多版本可以下载，但是，具体该怎么选择呢。我下面给出一些建议：
