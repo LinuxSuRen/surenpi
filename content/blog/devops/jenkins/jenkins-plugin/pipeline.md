@@ -2,6 +2,7 @@
 title: Jenkins 流水线插件
 description: Jenkins 流水线插件
 keywords: pipeline plugin
+toc: true
 ---
 
 流水线是 Jenkins 的一大特点，而这点在 DevOps 中显得尤为重要。它可以把一系列过程串起来，并且很好地用图形化的方式展现出来。
