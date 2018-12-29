@@ -33,3 +33,9 @@ properties([[$class: 'JobRestrictionProperty'],
 # 循环
 
 {{< exfile "static/codes/jenkinsfile/loop.groovy" "groovy" >}}
+
+# HTTP
+
+我们有时候需要在流水线中发送 HTTP 请求，下面给出一个例子：
+
+{{< exfile "static/codes/jenkinsfile/http.groovy" "groovy" >}}
