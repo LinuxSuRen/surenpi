@@ -1,6 +1,7 @@
 ---
 title: Jenkins Agent
 description: Jenkins Agent
+layout: suren
 keywords: jenkins agent
 toc: true
 ---
