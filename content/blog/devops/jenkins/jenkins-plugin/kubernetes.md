@@ -3,6 +3,11 @@ title: Jenkins Kubernetes Plugin
 description: Jenkins Kubernetes Plugin
 keywords: jenkins plugin kubernetes
 draft: false
+tags:
+- k8s
+- plugin
+- docker
+- agent
 toc: true
 ---
 
