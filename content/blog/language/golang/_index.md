@@ -1,5 +1,8 @@
 ---
-title: golang
-description: golang
+title: Golang
+description: Golang
+menu:
+    blog:
+        parent: language
 ---
-golang
+Golang

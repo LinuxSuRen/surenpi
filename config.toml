@@ -24,39 +24,26 @@ googleAnalytics = "UA-4216293-5"
   identifier = "opensource"
   url = "/opensource"
 
-# [[menu.blog]]
-#   name = "DevOps"
-#   weight = 1100
-#   identifer = "devops"
-#   url = "/blog/devops"
-# [[menu.blog]]
-#   name = "SCM"
-#   weight = 1200
-#   identifer = "scm"
-#   url = "/blog/scm"
-# [[menu.blog]]
-#   name = "Network"
-#   weight = 1300
-#   identifer = "network"
-#   url = "/blog/network"
-# [[menu.blog]]
-#   name = "OS"
-#   weight = 1400
-#   identifer = "os"
-#   url = "/blog/os"
-
-# [[menu.linux]]
-#   name = "Linux"
-#   weight = 14000
-#   identifer = "Linux"
-#   url = "/blog/os/linux"
-	
-# translation
-# [[menu.translation]]
-#   name = "Jenkins"
-# 	weight = 2100
-# 	identifier = "jenkins"
-# 	url = "/jenkins"
+[[menu.blog]]
+  name = "DevOps"
+  weight = 110
+  identifier = "devops"
+  url = "/blog/devops"
+[[menu.blog]]
+  name = "编程语言"
+  weight = 120
+  identifier = "language"
+  url = "/blog/language"
+[[menu.blog]]
+  name = "操作系统"
+  weight = 140
+  identifier = "os"
+  url = "/blog/os"
+[[menu.blog]]
+  name = "其他内容"
+  weight = 180
+  identifier = "other"
+  url = "/blog/other"
 
 [[menu.global]]
   name = "SuRen"

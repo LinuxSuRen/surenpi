@@ -1,7 +1,6 @@
 ---
 title: 操作系统
-description: 操作系统
-menu: blog
-weight: 333
+weight: 130
 ---
-操作系统
+
+不了解操作系统还怎么开发、测试、运维？

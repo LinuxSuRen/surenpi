@@ -1,5 +1,7 @@
 ---
 title: "Kubernetes"
 description: "Kubernetes"
+menu:
+    blog:
+        parent: devops
 ---
-DevOps相关技术文章

@@ -1,7 +1,6 @@
 ---
 title: 编程语言
-description: 编程语言
-menu: blog
-weight: 444
+weight: 120
 ---
-编程语言
+
+编程语言就是我们的普通话，那就努力讲好普通话。
