@@ -13,6 +13,8 @@ toc: true
 
 执行命令 `mvn --update-snapshots archetype:generate -Dfilter=io.jenkins.archetypes:`，然后，根据提示选择骨架类型，以及当前 Maven 工程的信息。
 
+{{< ghref "插件工程的父 POM" "jenkinsci/plugin-pom" >}} 里定义了很多信息，包括：Jenkins 的版本、Java 版本、单元测试框架版本等。
+
 # 运行
 
 在工程根目录下执行 `mvn hpi:run`

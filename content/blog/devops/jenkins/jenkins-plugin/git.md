@@ -6,7 +6,7 @@ keywords: git
 draft: true
 ---
 
-{{< exref "Git 插件" "https://plugins.jenkins.io/git" >}使得我们可以在 Jenkins 里对 Git 仓库进行拉取等操作。
+{{< exref "Git 插件" "https://plugins.jenkins.io/git" >}}使得我们可以在 Jenkins 里对 Git 仓库进行拉取等操作。
 
 # 凭据
 
