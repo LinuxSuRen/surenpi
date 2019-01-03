@@ -1,6 +1,8 @@
 ---
 title: Maven
 description: Maven 是非常流行的一个 Java 持续构建工具
+toc: true
+keywords: maven
 ---
 
 # 构建
@@ -10,6 +12,12 @@ description: Maven 是非常流行的一个 Java 持续构建工具
 跳过测试 `mvn package -DskipTests=true`
 
 `mvn package -U` 强制更新快照版本的依赖
+
+# 离线
+
+通常情况下，Maven 需要从网络上下载依赖文件，这样的话，执行效率会比较低。如果你确保本地仓库已经有了所有的依赖文件的话，可以添加参数使 Maven 不再从网络上下载，直接使用本地的依赖。例如：
+
+`mvn clean package --offline`
 
 # 部署
 
