@@ -5,6 +5,8 @@ toc: true
 keywords: maven
 ---
 
+{{< youtube "cynDKA03bWA" >}}
+
 # 构建
 
 跳过JavaDoc `mvn package -Dmaven.javadoc.skip=true`
