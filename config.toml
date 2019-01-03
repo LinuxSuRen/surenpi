@@ -8,6 +8,25 @@ googleAnalytics = "UA-4216293-5"
 
 # sectionPagesMenu = "blog"
 
+[languages]
+  [languages.zh]
+    weight = 1
+    languageName = "中文"
+  [languages.en]
+    languageCode = "en-US"
+    weight = 2
+    languageName = "English"
+    [[languages.en.menu.global]]
+      name = "Blog"
+      weight = 100
+      identifier = "blog"
+      url = "/en/blog"
+    [[languages.en.menu.global]]
+      name = "OpenSource"
+      weight = 300
+      identifier = "opensource"
+      url = "/en/opensource"
+
 [[menu.global]]
   name = "博客"
   weight = 100
