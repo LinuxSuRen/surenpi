@@ -1,6 +1,6 @@
 ---
 title: "Core"
-description: "Core"
+description: "API from the Jenkins Core"
 date: 2019-01-03T16:24:48+08:00
 draft: false
 toc: true

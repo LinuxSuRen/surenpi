@@ -1,6 +1,7 @@
 ---
 title: Kubectl
 description: Kubectl 的使用
+toc: true
 ---
 
 # 下载
