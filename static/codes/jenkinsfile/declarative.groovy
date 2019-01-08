@@ -1,10 +1,13 @@
 pipeline {
     agent {
-        label "master"
+        label 'master'
     }
 
     stages {
         stage('one') {
+            when {
+                branch 'master'
+            }
             steps {
                 echo 'Hello World'
             }
