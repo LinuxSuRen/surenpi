@@ -4,6 +4,7 @@ description: "钉钉通知"
 date: 2019-01-08T11:08:06+08:00
 draft: false
 toc: true
+jenkinsIssues: "component%20%3D%20dingding-notifications-plugin"
 ---
 
 支持的特性包括：
@@ -24,6 +25,8 @@ toc: true
 在 Jenkins 中新建自由风格任务
 
 在 *构建后操作* 中 *添加钉钉通知器配置* 。在表单中需要把 Jenkins 的 URL 设置正确——必须让钉钉可以访问到。Token 是刚才在钉钉机器人里的 webhook 里。
+
+上面的方式，只能发送构建状态，如果要发送自定义消息的话，需要添加 `Sending Message To Ding Talk`。在高级选项里可以设置。
 
 # 流水线
 
