@@ -37,6 +37,32 @@ public ListBoxModel doFillMethodItems() {
 
 细心的童鞋肯定能看出来，`doFillMethodItems` 中间的 `Method` 就对应页面上的字段名称。
 
+# 校验
+
+如果你的表单里有一个字段 `crontab` 希望能添加数据格式校验的话，可以在对应类的 `DescriptorImpl` 中添加方法来实现：
+
+```
+<f:entry title="${%Crontab}" field="crontab">
+<f:textbox/>
+</f:entry>
+```
+
+```
+public FormValidation doCheckCrontab(@QueryParameter String value, @AncestorInPath Item item) {
+    try {
+        CronTabList ctl = CronTabList.create(fixNull(value), item != null ? Hash.from(item.getFullName()) : null);
+        Collection<FormValidation> validations = new ArrayList<>();
+        updateValidationsForSanity(validations, ctl);
+        updateValidationsForNextRun(validations, ctl);
+        return FormValidation.aggregate(validations);
+    } catch (ANTLRException e) {
+        if (value.trim().indexOf('\n')==-1 && value.contains("**"))
+            return FormValidation.error(Messages.TimerTrigger_MissingWhitespace());
+        return FormValidation.error(e.getMessage());
+    }
+}
+```
+
 # 凭据
 
 ```
