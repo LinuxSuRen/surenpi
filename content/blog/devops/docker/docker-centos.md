@@ -1,5 +1,6 @@
 ---
 title: 在 CentOS 安装 Docker
+description: 在 CentOS 安装 Docker
 ---
 
 ```
