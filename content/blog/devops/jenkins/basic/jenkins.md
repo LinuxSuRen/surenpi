@@ -58,11 +58,23 @@ Jenkins 在启动过程中，大多数的参数是具有默认值的。但是，
 
 `java -jar jenkins.war --httpPort=1234` 设置 Jenkins 的监听端口。这样 Jenkins 会监听 0.0.0.0 上的端口，也就是外部网络也可以访问。
 
+## JENKINS_HOME
+
+我们可以在启动 Jenkins 时指定家目录，默认值为用户目录下的 `.jenkins`。参数（`-D` 参数必须要在 `-jar` 之前）如下：
+
+`java -DJENKINS_HOME=. -jar jenkins.war` 或者 `java -Duser.home=. -jar jenkins.war`
+
 ## 时区
 
 如果以 Docker 容器的方式来启动 Jenkins 的话，它默认的是 UTC 时区。 我们可能就需要设置为我们所在的当地时区。
 
 `docker run -v /etc/localtime:/etc/localtime -p 8080:8080 jenkins/jenkins:lts`
+
+## 向导
+
+Jenkins 在首次运行时，会有一个配置向导，可以通过下面的参数跳过这个向导：
+
+`java -Djenkins.install.runSetupWizard=false -jar jenkins.war`
 
 # 重启
 
