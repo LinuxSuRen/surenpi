@@ -2,7 +2,16 @@
 title: Ingress
 description: Ingress
 keywords: 413, ingress
+toc: true
 ---
+
+# Controller
+
+如何要利用 `Ingress` 来监听 `80` 端口的话，需要按照 `Controller`.
+
+# Rewrite
+
+Ingress 支持地址重写，具体请[查看参考](https://github.com/kubernetes/ingress-nginx/blob/master/docs/examples/rewrite/README.md)。
 
 # 413
 
