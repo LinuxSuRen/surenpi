@@ -4,12 +4,6 @@ pipeline {
     }
 
     stages{
-        stage("Clone") {
-            steps {
-                checkout scm
-            }
-        }
-
         stage("Build") {
             steps{
                 hugo baseUrl: '', destination: '', hugoHome: '/usr/local/bin/'
@@ -17,21 +11,21 @@ pipeline {
             }
         }
         
-        stage("Lunr Index") {
-            steps {
-                sh '''
-                #!/bin/sh
-                pwd
-                node themes/gohugoTheme/src/hugo-lunr.js
-                '''
-            }
-        }
+        // stage("Lunr Index") {
+        //     steps {
+        //         sh '''
+        //         #!/bin/sh
+        //         pwd
+        //         node themes/gohugoTheme/src/hugo-lunr.js
+        //         '''
+        //     }
+        // }
 
-        stage("Gitee Publish") {
-            steps {
-                hugoGitPublsh authorEmail: 'zxjlwt@126.com', authorName: 'suren', commitLog: 'Auto commit by hugo-plugin.', committerEmail: 'zxjlwt@126.com', committerName: 'suren', credentialsId: 'a832798a-0513-4d45-a47a-95d152dc915a', publishBranch: 'master', publishDir: 'gitee', targetUrl: 'https://gitee.com/surenpi/blog'
-            }
-        }
+        // stage("Gitee Publish") {
+        //     steps {
+        //         hugoGitPublsh authorEmail: 'zxjlwt@126.com', authorName: 'suren', commitLog: 'Auto commit by hugo-plugin.', committerEmail: 'zxjlwt@126.com', committerName: 'suren', credentialsId: 'a832798a-0513-4d45-a47a-95d152dc915a', publishBranch: 'master', publishDir: 'gitee', targetUrl: 'https://gitee.com/surenpi/blog'
+        //     }
+        // }
 
         stage("Github Publish") {
             steps {
