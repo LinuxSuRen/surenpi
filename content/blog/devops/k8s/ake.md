@@ -1,7 +1,7 @@
 ---
 title: Ake
 description: 一键安装 K8S
-draft: true
+draft: false
 ---
 
 # 更新依赖

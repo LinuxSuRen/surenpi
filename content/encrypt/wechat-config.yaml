@@ -1,0 +1,14 @@
+apiVersion: v1
+data:
+  wechat.yaml: |-
+    token: wechat4go
+    git_url: https://github.com/jenkins-infra/wechat
+    git_branch: master
+    github_webhook_secret: secret
+    appID: wxdd2924d2e2598bff
+    appSecret: 8db8b2ee78059e7f4cb7e38020e2f566
+    server_port: 18080
+kind: ConfigMap
+metadata:
+  name: wechat-config
+  namespace: alauda-system

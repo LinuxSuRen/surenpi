@@ -1,6 +1,7 @@
 ---
 title: wget
 description: wget
+toc: true
 ---
 
 # 代理

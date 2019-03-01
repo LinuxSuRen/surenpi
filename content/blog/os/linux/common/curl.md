@@ -21,3 +21,5 @@ curl --header "Authorization: Bearer $token" --insecure https://localhost:6443/a
 我们可以通过 curl 下载并执行脚本，例如： `curl http://test.com/test.sh | bash -s arg1`
 
 curl http://admin:admin@chartmuseum.jx.k1.surenpi.com/api/charts -F "chart=@jenkins-x-platform-0.0.1607.tgz"
+
+# 
