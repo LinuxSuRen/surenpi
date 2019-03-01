@@ -29,22 +29,16 @@
      <link href='{{ "dist/main.css" | relURL }}' rel='stylesheet' type="text/css" />
       {{- partial "head-additions.html" . -}}
       {{- template "_internal/opengraph.html" . -}}
-      {{- template "_internal/google_news.html" . -}}
       {{- template "_internal/schema.html" . -}}
-      {{- template "_internal/twitter_cards.html" . -}}
 
       {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
         {{ partial "gtag" . }}
       {{ end }}
-
-
-
-
   </head>
   <body class="ma0 sans-serif bg-primary-color-light{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
     {{ block "nav" . }}{{ partial "site-nav.html" . }}{{ end }}
     {{ block "header" . }}{{ end }}
-    <main role="main" class="content-with-sidebar min-vh-100 pb7 pb0-ns">
+    <main role="main" class="content-with-sidebar pb7 pb0-ns">
       {{ block "main" . }}{{ end }}
     </main>
 

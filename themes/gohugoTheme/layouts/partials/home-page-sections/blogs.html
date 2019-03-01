@@ -1,0 +1,10 @@
+<section class="relative w-100 bg-black white">
+    <div class="flex flex-wrap w-90-l center center mw9">
+        {{ range $p := first 4 (.Site.Pages.ByLastmod | after 1 | shuffle) }}
+        <a href="{{ $p.RelPermalink }}" class="link lh-copy light-gray f6 w-100 w-50-m w-25-l bg-animate hover-bg-accent-color hover-white pv3 pv4-ns ph3 ph4-ns dib">
+            <span class="f6 gray pb1 db">{{ $p.Lastmod }}</span>
+            {{ $p.Description }}
+        </a>
+        {{end}}
+    </div>
+</section>

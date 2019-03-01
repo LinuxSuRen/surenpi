@@ -1,8 +1,7 @@
 {{ define "header" }}
   {{ partial "hero" . }}
-  {{ partial "boxes-small-news" . }}
 {{ end }}
 
 {{ define "main" }}
-
+  {{- partial "home-page-sections/blogs" . -}}
 {{ end }}
