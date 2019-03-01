@@ -9,6 +9,7 @@ tags:
 - docker
 - agent
 toc: true
+jenkinsIssues: "component%20%3D%20kubernetes-plugin"
 ---
 
 {{< exref "Kubernetes" "https://kubernetes.io/" >}} 是一个容器编排的系统，而 {{< exref "Kubernetes 插件" "https://plugins.jenkins.io/kubernetes" >}}则是 Jenkins 用来调度 K8S 以实现动态计算节点的方式。对{{< ghref "插件源码" "jenkinsci/kubernetes-plugin" >}}感兴趣的童鞋可以了解下。
@@ -31,9 +32,23 @@ JNLP 的基本原理。
 
 然后，在“系统配置”页面中的 Kubernetes 区域配置正确的 Jenkins 以及 JNLP 的地址以及端口。
 
+# 认证
+
+有多种方式可以配置 Jenkins 与 Kubernetes 集群集成认证。最简单的就是添加凭据时选择 `Secret File` 类型，并把文件 `~/.kube/config` 上传即可。这里有[如何导出 k8s 集群认证文件]({{< relref "blog/devops/k8s/kubectl.md" >}})的介绍。
+
+导出 Kubernetes 认证文件的命令：
+
+`curl https://raw.githubusercontent.com/LinuxSuRen/surenpi/master/static/codes/shell/k8s/export-k8s-crt.sh|bash`
+
+# Pod 模板
+
+一个 Pod 对应 Jenkins 中的一个执行节点，
+
 # K8S 代理节点
 
-该插件在流水线中以支持多种方式使用 K8S 代理节点。
+该插件在流水线中以支持多种方式使用 K8S 代理节点。通常情况下，我们需要在 Pod 模板中添加一个容器模板，也就是所需要的运行环境，例如：Java、Golang 等语言相关的。在运行期，Kubernetes 插件会自动添加一个 JNLP 的容器。
+
+对于希望使用自定义 JNLP 镜像的用户来说，可以多添加一个 JNLP 镜像就可以覆盖了。
 
 # 多容器
 
