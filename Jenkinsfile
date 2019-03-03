@@ -22,7 +22,12 @@ pipeline {
 
         stage("Github Publish") {
             steps {
-                hugoGitSubmodulePublsh authorEmail: '', authorName: '', commitLog: 'Auto commit by hugo-plugin.', committerEmail: 'zxjlwt@126.com', committerName: 'suren', credentialsId: '5e1609b1-c9a8-4bb2-bc9c-1a2e0eda4856', publishBranch: 'master', publishDir: 'public'
+                hugoGitPublish authorEmail: 'linuxsuren@gmail.com', authorName: 'suren',
+                    commitLog: 'Auto commit by hugo-plugin.',
+                    committerEmail: 'linuxsuren@gmail.com', committerName: 'suren',
+                    credentialsId: 'a832798a-0513-4d45-a47a-95d152dc915a',
+                    publishBranch: 'master', publishDir: 'github',
+                    targetUrl: 'https://github.com/linuxsuren/linuxsuren.github.io'
             }
         }
     }
