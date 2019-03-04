@@ -19,6 +19,14 @@ pipeline {
         //         '''
         //     }
         // }
+        
+        stage("branch"){
+            steps{
+                echo env.BRANCH_NAME
+                echo env.CHANGE_ID
+                echo env.CHANGE_TARGET
+            }
+        }
 
         stage("Github Publish") {
             steps {
