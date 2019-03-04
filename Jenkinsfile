@@ -6,7 +6,7 @@ pipeline {
     stages{
         stage("Build") {
             steps{
-                hugo baseUrl: '', destination: ''
+                hugo baseUrl: '', destination: 'github'
             }
         }
         
@@ -26,7 +26,7 @@ pipeline {
                     commitLog: 'Auto commit by hugo-plugin.',
                     committerEmail: 'linuxsuren@gmail.com', committerName: 'suren',
                     credentialsId: '84862d34-5d17-4521-a37e-4200b8c99afe',
-                    publishBranch: 'master', publishDir: 'github',
+                    publishBranch: 'hello', publishDir: 'github',
                     targetUrl: 'https://github.com/linuxsuren/linuxsuren.github.io'
             }
         }
