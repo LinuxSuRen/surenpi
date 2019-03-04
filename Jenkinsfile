@@ -4,6 +4,12 @@ pipeline {
     }
 
     stages{
+        stage("clone") {
+            steps{
+                checkout scm
+            }
+        }
+        
         stage("Build") {
             steps{
                 hugo baseUrl: '', destination: 'github'
