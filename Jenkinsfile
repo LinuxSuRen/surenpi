@@ -26,6 +26,7 @@ pipeline {
                 echo env.CHANGE_ID
                 echo env.CHANGE_TARGET
                 echo env.CHANGE_TITLE
+                echo 'hello'
             }
         }
 
