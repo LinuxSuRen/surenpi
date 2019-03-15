@@ -85,3 +85,9 @@ Jenkins 在首次运行时，会有一个配置向导，可以通过下面的参
 如果，我们需要重新启动 Jenkins，没有必要把进程杀掉后再次启动。可以直接在 Jenkins 界面上就实现重启。
 
 访问地址 `http://localhost:8080/restart` 后点击确认。
+
+# 公钥
+
+访问下面的地址可以得到 Jenkins 的公钥：
+
+`http://localhost:8080/instance-identity/`
