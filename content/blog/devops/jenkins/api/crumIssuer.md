@@ -19,3 +19,10 @@ toc: true
 使用该 Crumb 的方式如下：
 
 `curl -u user:passwd http:/localhost:8080/jenkins/job/jobName/build -X POST --header "Jenkins-Crumb: 6e78c5725ea0c522bdcb787d548465aa"`
+
+使用 Python 获取 Crumb 值：
+
+```
+export issuer=$(curl -u admin:$JENKINS_TOKEN $JENKINS_URL/crumbIssuer/api/json -s)
+issuer=$(python -c "import json;import os;issuer=os.getenv('issuer');issuer=json.loads(issuer);print issuer['crumb']")
+```
