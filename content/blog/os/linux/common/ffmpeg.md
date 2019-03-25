@@ -21,3 +21,7 @@ http://ksloan.net/watermarking-videos-from-the-command-line-using-ffmpeg-filters
 把视频文件按照顺序写入 `files.txt`，然后执行命令：
 
 `ffmpeg -f concat -i files.txt -c copy jenkins-basic-install.mp4`
+
+# 格式转换
+
+`ffmpeg -i source.mkv -codec copy target.mp4`
