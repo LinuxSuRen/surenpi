@@ -22,4 +22,16 @@ curl --header "Authorization: Bearer $token" --insecure https://localhost:6443/a
 
 curl http://admin:admin@chartmuseum.jx.k1.surenpi.com/api/charts -F "chart=@jenkins-x-platform-0.0.1607.tgz"
 
-# 
+# 状态码
+
+`curl -I -m 10 -o /dev/null -s -w %{http_code} www.baidu.com` 这样获取 HTTP 状态码
+
+# 输出格式
+
+支持的变量包括：
+
+* content_type
+* filename_effective
+* http_code
+* http_connect
+* http_version
