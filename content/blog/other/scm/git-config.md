@@ -2,7 +2,7 @@
 title: "Git Config"
 description: "Git Config"
 date: 2019-02-26T18:04:00+08:00
-draft: true
+draft: false
 toc: true
 ---
 

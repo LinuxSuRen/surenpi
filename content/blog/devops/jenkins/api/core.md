@@ -40,13 +40,17 @@ toc: true
 
 `curl http://localhost:8080/jenkins/job/jobName/lastCompletedBuild/consoleText` 最近一次完成的构建日志
 
+# 插件管理
+
+`curl -u admin:token http://localhost:8080/jenkins/pluginManager/uploadPlugin -F "name=@target/demo.hpi"` 上传插件
+
 # 重启
 
 `curl -X POST http://localhost:8080/jenkins/safeRestart` 必须使用 `POST` 请求
 
 # 认证
 
-这里既支持密码也支持 Token 的方式
+这里既支持密码也支持 `Token` 的方式
 
 `curl http://localhost:8080/jenkins/job/jobName/api/json -u user:passwd`
 
