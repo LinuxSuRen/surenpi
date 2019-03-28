@@ -24,4 +24,6 @@ http://ksloan.net/watermarking-videos-from-the-command-line-using-ffmpeg-filters
 
 # 格式转换
 
-`ffmpeg -i source.mkv -codec copy target.mp4`
+通过下面的命令，可以实现视频格式的转换：
+
+`ffmpeg -i demo.mkv -codec copy demo.mp4`
