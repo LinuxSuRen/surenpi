@@ -3,6 +3,10 @@ pipeline {
         label "hugo"
     }
 
+    options {
+        disableConcurrentBuilds()
+    }
+
     stages{
         stage("Build") {
             steps{
