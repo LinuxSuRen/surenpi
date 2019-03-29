@@ -130,3 +130,8 @@ issueTerm = "pathname"
 [params.comments.utterances.github]
 username = "linuxsuren"
 repository = "linuxsuren/linuxsuren.github.io"
+
+[Social]
+twitter = "suren69811254"
+github = "LinuxSuRen"
+sinaweibo = "linuxsuren"
