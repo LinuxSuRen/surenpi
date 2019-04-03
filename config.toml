@@ -131,6 +131,10 @@ issueTerm = "pathname"
 username = "linuxsuren"
 repository = "linuxsuren/linuxsuren.github.io"
 
+[params.build]
+icon = "http://jenkins.k8s.surenpi.com/buildStatus/icon?job=surenpi%2Fmaster"
+link = "http://jenkins.k8s.surenpi.com/job/surenpi/job/master/"
+
 [Social]
 twitter = "suren69811254"
 github = "LinuxSuRen"
