@@ -15,3 +15,9 @@ toc: true
 的 PR 关闭。
 
 这样就能做到，提供贡献者及时查看自己相关的 PR 动态。
+
+# utterances
+
+[utterances](https://utteranc.es/) 是基于 GitHub 的 Issues 来提供评论功能的服务。
+对于使用 [Hugo](https://github.com/gohugoio) 这样的静态网页式的博客，可以非常方便地添加
+网友评论功能——但无需任何数据库的服务。
