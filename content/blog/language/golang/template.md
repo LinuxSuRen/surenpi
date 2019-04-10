@@ -1,6 +1,7 @@
 ---
 title: Template
 description: Go Template
+toc: true
 ---
 
 # Action
