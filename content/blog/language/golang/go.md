@@ -1,6 +1,7 @@
 ---
 title: golang
 description: golang
+toc: true
 ---
 
 # Environment
@@ -20,3 +21,7 @@ description: golang
 设置全局代理 `git config --global http.proxy 'http://192.168.2.9:8123'`
 
 设置忽略的代理 `git config --global no.proxy '*.github.com'`
+
+# Troubleshooting
+
+`--oom-kill-disable=false`
