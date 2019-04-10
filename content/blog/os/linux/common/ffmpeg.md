@@ -1,6 +1,7 @@
 ---
 title: ffmpeg
 description: ffmpeg
+toc: true
 keywords: ffmpeg watermark
 ---
 
@@ -27,3 +28,23 @@ http://ksloan.net/watermarking-videos-from-the-command-line-using-ffmpeg-filters
 通过下面的命令，可以实现视频格式的转换：
 
 `ffmpeg -i demo.mkv -codec copy demo.mp4`
+
+# 图片缩放
+
+假设图片 `input.jpg` 的尺寸为：320⨉207
+
+`ffmpeg -i input.jpg -vf scale=320:240 output_320x240.png` 强制设置图片的尺寸
+
+`ffmpeg -i input.jpg -vf scale=320:-1 output_320.png` 保留缩放比（输入和输出文件不能相同），输出的图片尺寸为：320⨉207
+
+`ffmpeg -i input.jpg -vf scale=320:-2 output_320.png` 这样可以让图片的宽、高都被 `n` 整除，输出的图片尺寸为：320⨉206
+
+`ffmpeg -i input.jpg -vf scale=iw*2:ih input_double_width.png` 使用变量设置宽、高，`iw` 代表输入的宽度，`ih` 代表输入的高度
+
+`ffmpeg -i input.jpg -vf "scale=iw/2:ih/2" input_half_size.png` 使得图片的宽、高为原来的一半
+
+`ffmpeg -i input.jpg -vf "scale='min(320,iw)':'min(240,ih)'" input_not_upscaled.png`
+
+`ffmpeg -i input.jpg -vf scale=w=320:h=240:force_original_aspect_ratio=decrease output_320.png`
+
+`ffmpeg -i input.jpg -vf "scale=320:240:force_original_aspect_ratio=decrease,pad=320:240:(ow-iw)/2:(oh-ih)/2" output_320_padding.png`
