@@ -15,6 +15,11 @@ func demo4Map() {
 	strMap["name"] = "link"
 
 	fmt.Println(strMap)
+
+	initMap := map[string]string{
+		"one": "first man",
+	}
+	fmt.Println(initMap)
 }
 
 func demo4Array() {
