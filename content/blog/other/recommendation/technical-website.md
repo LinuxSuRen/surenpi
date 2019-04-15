@@ -6,4 +6,4 @@ draft: false
 toc: true
 ---
 
-{{ exref "dev.to" "https://dev.to" }}
+{{< exref "dev.to" "https://dev.to" >}}
