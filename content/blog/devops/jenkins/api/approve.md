@@ -11,7 +11,8 @@ toc: true
 这里介绍的是[核准插件]({{< ref "blog/devops/jenkins/jenkins-plugin/pipeline-input-step.md" >}})中的 API 使用。
 
 {{% note %}}
-该 DSL 是基于某一次构建的，因此，下面的 API 都需要对应的构建 ID。另外，还需要对应的 `inputid`。
+该 DSL 是基于某一次构建的，因此，下面的 API 都需要对应的构建 ID。另外，还需要对应的 `inputid`。另外，下面提到的 API 并不是基于 Restful 风格
+编写的，实际上是以表单的方式来提交的。也就是说，需要在发送请求时，在协议头中加入 `Content-Type: application/x-www-form-urlencoded`
 {{% /note %}}
 
 # 通过
