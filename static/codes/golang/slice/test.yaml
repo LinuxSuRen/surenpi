@@ -1,0 +1,244 @@
+- kubernetes:
+    name: kubernetes
+    jenkinsTunnel: jenkins-agent.alauda-system:50000
+    jenkinsUrl: http://jenkins.alauda-system:8080
+    maxRequestsPerHostStr: "32"
+    namespace: alauda-system
+    serverUrl: https://kubernetes.default
+    podRetention: never
+    containerCapStr: ""
+    templates:
+    - name: base
+      serviceAccount: jenkins
+      label: tools base
+      nodeUsageMode: NORMAL
+      podRetention: never
+      instanceCapStr: "5"
+      containers:
+      - name: jnlp
+        args: "${computer.jnlpmac} ${computer.name}"
+        command: ""
+        image: index.alauda.cn/alaudaorg/jnlp-slave:v0.1.13
+        livenessProbe:
+          failureThreshold: 0
+          initialDelaySeconds: 0
+          periodSeconds: 0
+          successThreshold: 0
+          timeoutSeconds: 0
+        alwaysPullImage: false
+        resourceRequestCpu: 200m
+        resourceRequestMemory: 256Mi
+        privileged: false
+      - name: tools
+        args: cat
+        command: /bin/sh -c
+        image: index.alauda.cn/alaudaorg/builder-tools:ubuntu-v0.1.2
+        livenessProbe:
+          failureThreshold: 0
+          initialDelaySeconds: 0
+          periodSeconds: 0
+          successThreshold: 0
+          timeoutSeconds: 0
+        alwaysPullImage: false
+        resourceRequestCpu: 200m
+        resourceRequestMemory: 512Mi
+        privileged: false
+        ttyEnabled: true
+      envVars:
+      - envVar:
+          key: JENKINS_URL
+          value: http://jenkins.alauda-system:8080
+      volumes:
+      - hostPathVolume:
+          hostPath: /var/run/docker.sock
+          mountPath: /var/run/docker.sock
+      - emptyDirVolume:
+          memory: false
+          mountPath: /tmp
+      workspaceVolume:
+        emptyDirWorkspaceVolume:
+          memory: false
+    - name: java
+      label: java java-openjdk8 maven maven3.5
+      podRetention: never
+      nodeUsageMode: NORMAL
+      instanceCapStr: "5"
+      containers:
+      - name: java
+        args: cat
+        command: /bin/sh -c
+        image: index.alauda.cn/alaudaorg/builder-java:openjdk8-v0.1.1
+        livenessProbe:
+          failureThreshold: 0
+          initialDelaySeconds: 0
+          periodSeconds: 0
+          successThreshold: 0
+          timeoutSeconds: 0
+        alwaysPullImage: false
+        resourceLimitCpu: 1
+        resourceLimitMemory: 2500M
+        resourceRequestCpu: 500m
+        resourceRequestMemory: 750M
+        privileged: false
+        ttyEnabled: true
+      inheritFrom: base
+    - name: golang
+      label: go golang golang-1.10
+      containers:
+      - name: golang
+        args: cat
+        command: /bin/sh -c
+        image: index.alauda.cn/alaudaorg/builder-go:1.10-ubuntu-v0.1.5
+        livenessProbe:
+          failureThreshold: 0
+          initialDelaySeconds: 0
+          periodSeconds: 0
+          successThreshold: 0
+          timeoutSeconds: 0
+        alwaysPullImage: false
+        resourceLimitCpu: 1
+        resourceLimitMemory: 1500M
+        resourceRequestCpu: 500m
+        resourceRequestMemory: 750M
+        privileged: false
+        ttyEnabled: true
+      inheritFrom: base
+      podRetention: never
+      nodeUsageMode: NORMAL
+      instanceCapStr: "5"
+      workspaceVolume:
+        emptyDirWorkspaceVolume:
+          memory: false
+    - name: nodejs
+      label: node nodejs nodejs-10
+      containers:
+      - args: cat
+        command: /bin/sh -c
+        image: index.alauda.cn/alaudaorg/builder-nodejs:10-stretch-v0.1.2
+        livenessProbe:
+          failureThreshold: 0
+          initialDelaySeconds: 0
+          periodSeconds: 0
+          successThreshold: 0
+          timeoutSeconds: 0
+        name: nodejs
+        alwaysPullImage: false
+        resourceLimitCpu: 1
+        resourceLimitMemory: 1500M
+        resourceRequestCpu: 500m
+        resourceRequestMemory: 750M
+        privileged: false
+        ttyEnabled: true
+      inheritFrom: base
+      podRetention: never
+      nodeUsageMode: NORMAL
+      instanceCapStr: "5"
+      workspaceVolume:
+        emptyDirWorkspaceVolume:
+          memory: false
+    - name: python2.7
+      label: python python-2.7
+      containers:
+      - args: cat
+        command: /bin/sh -c
+        image: index.alauda.cn/alaudaorg/builder-python:2.7-v0.1.2
+        livenessProbe:
+          failureThreshold: 0
+          initialDelaySeconds: 0
+          periodSeconds: 0
+          successThreshold: 0
+          timeoutSeconds: 0
+        name: python
+        alwaysPullImage: false
+        resourceLimitCpu: 1
+        resourceLimitMemory: 1500M
+        resourceRequestCpu: 500m
+        resourceRequestMemory: 750M
+        privileged: false
+        ttyEnabled: true
+      inheritFrom: base
+      podRetention: never
+      nodeUsageMode: NORMAL
+      instanceCapStr: "5"
+      workspaceVolume:
+        emptyDirWorkspaceVolume:
+          memory: false
+    - name: python3.7
+      label: python python-3.6
+      containers:
+      - args: cat
+        command: /bin/sh -c
+        image: index.alauda.cn/alaudaorg/builder-python:3.6-v0.1.2
+        livenessProbe:
+          failureThreshold: 0
+          initialDelaySeconds: 0
+          periodSeconds: 0
+          successThreshold: 0
+          timeoutSeconds: 0
+        name: python
+        alwaysPullImage: false
+        resourceLimitCpu: 1
+        resourceLimitMemory: 1500M
+        resourceRequestCpu: 500m
+        resourceRequestMemory: 750M
+        privileged: false
+        ttyEnabled: true
+      inheritFrom: base
+      podRetention: never
+      nodeUsageMode: NORMAL
+      instanceCapStr: "5"
+      workspaceVolume:
+        emptyDirWorkspaceVolume:
+          memory: false
+    - name: python3.7
+      label: python python-3.7
+      containers:
+      - args: cat
+        command: /bin/sh -c
+        image: index.alauda.cn/alaudaorg/builder-python:3.7-v0.1.2
+        livenessProbe:
+          failureThreshold: 0
+          initialDelaySeconds: 0
+          periodSeconds: 0
+          successThreshold: 0
+          timeoutSeconds: 0
+        name: python
+        alwaysPullImage: false
+        resourceLimitCpu: 1
+        resourceLimitMemory: 1500M
+        resourceRequestCpu: 500m
+        resourceRequestMemory: 750M
+        privileged: false
+        ttyEnabled: true
+      inheritFrom: base
+      podRetention: never
+      nodeUsageMode: NORMAL
+      instanceCapStr: "5"
+      workspaceVolume:
+        emptyDirWorkspaceVolume:
+          memory: false
+    - name: hugo
+      label: hugo
+      containers:
+      - image: docker.io/surenpi/hugo-jnlp-agent
+        livenessProbe:
+          failureThreshold: 0
+          initialDelaySeconds: 0
+          periodSeconds: 0
+          successThreshold: 0
+          timeoutSeconds: 0
+        name: jnlp
+        alwaysPullImage: false
+        resourceLimitCpu: 1
+        resourceLimitMemory: 1500M
+        resourceRequestCpu: 50m
+        resourceRequestMemory: 70M
+        privileged: false
+        ttyEnabled: false
+      inheritFrom: base
+      podRetention: never
+      nodeUsageMode: NORMAL
+      instanceCapStr: "5"
+      workspaceVolume:
+        emptyDirWorkspaceVolume:
+          memory: false
