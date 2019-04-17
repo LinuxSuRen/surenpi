@@ -3,6 +3,9 @@ title: "Jenkins 核心"
 description: "Jenkins 核心的 API"
 date: 2019-01-03T16:29:11+08:00
 draft: false
+keywords:
+- curl
+- api
 toc: true
 ---
 
