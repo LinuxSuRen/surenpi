@@ -6,8 +6,11 @@ author: linuxsuren
 toc: true
 categories:
 - CICD
-- Jenkins
+- DevOps
 tags:
+- Docker
+- Helm
+- Kubernetes
 - Jenkins
 ---
 
