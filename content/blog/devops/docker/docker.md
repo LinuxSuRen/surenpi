@@ -62,6 +62,8 @@ toc: true
 
 查看容器所挂载的卷信息 `docker inspect 421b094bf94a | grep Mounts -A 20`
 
+讲本地的目录绑定到容器中 `docker run -v /your/home:/var/jenkins_home jenkins:jenkins:lts`
+
 # 构建
 
 设置构建过程中的代理 `docker build . --build-arg http_proxy=http://192.168.2.9:8123 --build-arg https_proxy=http://192.168.2.9:8123`
