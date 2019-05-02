@@ -1,9 +1,8 @@
 ---
 title: Vim
 description: Vim
+toc: true
 ---
-
-# 故障排除
 
 ## 粘贴缩进错乱
 
@@ -15,7 +14,13 @@ description: Vim
 
 `:set nopaste`
 
-# 样例配置
+## 字符
+
+`:set invlist` 显示不可见字符
+
+`:set nolist` 隐藏不可见字符
+
+## 样例配置
 
 ```
 set number

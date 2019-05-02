@@ -34,6 +34,8 @@ Jenkins 支持几种安装（启动）方式：
 
 用容器的方式来运行 Jenkins 也很方便。只要执行命令 `docker run -p 8080:8080 jenkins/jenkins:lts` 即可。
 
+需要每周更新版的话，直接加上版本号即可 `docker run -p 12345:8080 jenkins/jenkins:2.175`
+
 挂载卷 `docker run -v /your/home:/var/jenkins_home jenkins/jenkins:lts`
 
 ## Kubernetes
