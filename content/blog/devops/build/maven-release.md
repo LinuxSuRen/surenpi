@@ -53,6 +53,15 @@ gpg: directory '/Users/mac/.gnupg/openpgp-revocs.d' created
 
 <gpg.keyname>69EC4448C6CE32EB</gpg.keyname>
 
+```
+<profile>
+  <id>gpg</id>
+  <properties>
+    <gpg.keyname>4FD28481A917951C</gpg.keyname>
+  </properties>
+</profile>
+```
+
 修改pom文件
 ```
 <distributionManagement>
