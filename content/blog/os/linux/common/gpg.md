@@ -1,9 +1,10 @@
 ---
 title: GPG
 description: GPG
+toc: true
 ---
 
-# 安装
+## 安装
 
 Windows版本下载地址 https://www.gpg4win.org/download.html
 
@@ -13,7 +14,7 @@ Mac下安装 `brew install gpg` 或者从 https://gpgtools.org/ 下载
 
 从 https://sourceforge.net/p/gpgosx/docu/Download/ 下载 gpg2
 
-# 命令
+## 命令
 
 `gpg --export-secret-key` 标识名 > 导出文件名
 
@@ -29,17 +30,17 @@ Mac下安装 `brew install gpg` 或者从 https://gpgtools.org/ 下载
 
 `gpg --delete-key hello`
 
-# 上传公钥
+## 上传公钥
 
 `gpg --keyserver hkp://pool.sks-keyservers.net --send-key 1234567`
 
-# 接收公钥
+## 接收公钥
 
 `gpg --keyserver pool.sks-keyservers.net --recv-key 1234567`
 
 `gpg --keyserver hkp://keyserver.ubuntu.com --search-keys 1234567` 搜索公钥
 
-# 公钥服务器
+## 公钥服务器
 
 `hkp://pool.sks-keyservers.net`
 
@@ -47,7 +48,7 @@ Mac下安装 `brew install gpg` 或者从 https://gpgtools.org/ 下载
 
 `hkp://keyserver.ubuntu.com`
 
-# 加解密
+## 加解密
 
 `gpg --recipient 1234567 --output a-encrypt.log --encrypt a.log` 加密文件
 
@@ -55,7 +56,7 @@ Mac下安装 `brew install gpg` 或者从 https://gpgtools.org/ 下载
 
 `gpg --decrypt a-encrypt.log` 解密文件
 
-# 签名
+## 签名
 
 `gpg --sign a.log` 生成二进制签名文件 a.log.gpg
 
@@ -69,7 +70,7 @@ Mac下安装 `brew install gpg` 或者从 https://gpgtools.org/ 下载
 
 `gpg --local-user 1234567 --recipient 1234567 --armor --sign --encrypt a.log` 签名并加密
 
-# 异常
+## 异常
 
 ```
 gpg: cannot open /dev/tty': No such device or address
