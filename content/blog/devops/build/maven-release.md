@@ -2,6 +2,8 @@
 title: 发布Maven工程到中央仓库
 description: 本文介绍如何把自己的maven项目发布到OSS中央仓库中
 toc: true
+tag:
+- gpg
 ---
 
 
@@ -13,7 +15,7 @@ https://issues.sonatype.org/secure/CreateIssue.jspa?issuetype=21&pid=10134
 
 sonatype对发布的jar有一些要求，必须包括：源码（既然是开源，那么源码肯定是少不了的）、javaDoc、gpg签名。下面介绍如何安装gpg工具，然后生成签名文件。
 
-# 签名
+## 签名
 
 参考这里安装gpg。完成后，按照下面的步骤生成密钥。
 
@@ -62,7 +64,7 @@ gpg: directory '/Users/mac/.gnupg/openpgp-revocs.d' created
 </profile>
 ```
 
-修改pom文件
+## 修改pom文件
 ```
 <distributionManagement>
     <repository>
@@ -163,7 +165,7 @@ gpg: directory '/Users/mac/.gnupg/openpgp-revocs.d' created
 </profile>
 </profiles>
 ```
-发布
+## 发布
 经过上面繁琐的配置后，现在终于可以发布项目到Maven公共仓库了。
 
 在项目根目录下（根据需要自行选择），执行命令mvn deploy
