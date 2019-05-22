@@ -34,6 +34,15 @@
       {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
         {{ partial "gtag" . }}
       {{ end }}
+      <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?5281185c68056bb7f9819259f3aaccc8";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+      </script>
   </head>
   <body class="ma0 sans-serif bg-primary-color-light{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
     {{ block "nav" . }}{{ partial "site-nav.html" . }}{{ end }}
