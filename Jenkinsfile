@@ -37,4 +37,12 @@ pipeline {
             }
         }
     }
+    post { 
+        always { 
+            mail from: 'admin',
+                to: 'rick',
+                subject: 'SuRenPi 上线了结果：' + currentBuild.currentResult + '！', 
+                body: '访问地址 http://surenpi.com/'
+        }
+    }
 }
