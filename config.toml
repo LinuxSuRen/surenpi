@@ -122,6 +122,7 @@ ghrepo = "https://github.com/linuxsuren/surenpi/"
 ## GH Repo for filing a new issue
 github_repo = "https://github.com/linuxsuren/surenpi/issues/new"
 ghdocsrepo = "https://github.com/LinuxSuRen/surenpi/tree/master"
+env = "production"
 
 [params.comments.utterances]
 enable = true

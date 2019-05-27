@@ -9,9 +9,20 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
-    <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ block "title" . }}{{ with .Title }}{{ . }} - {{ end }}{{ .Site.Title }}{{ end }}</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
+
+    {{ with .Description }}
+    <meta name="description" content="{{.}}">
+    {{ else }}
+    <meta name="description" content="某个开源人的博客，记录开源路上的故事。">
+    {{ end }}
+    {{ with .Keywords }}
+    <meta name="keywords" content="{{ delimit . "," "," }}">
+    {{ else }}
+    <meta name="keywords" content="LinuxSuRen,surenpi,素人网站,素人派,技术博客">
+    {{ end }}
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
      {{ .Hugo.Generator }}
