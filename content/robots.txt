@@ -1,4 +1,6 @@
 User-agent:* 
 Allow: /blog
+Allow: /zh
+Allow: /en
 
 Sitemap: http://surenpi.com/sitemap.xml
