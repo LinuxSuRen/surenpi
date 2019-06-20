@@ -1,6 +1,6 @@
 ---
 title: Jenkins
-description: Jenkins 是一个开源的 CI 服务
+description: Jenkins 是一个开源的 CI/CD 平台，本文是对其进行简单的介绍
 keywords: jenkins
 author: linuxsuren
 date: 2019-06-12
