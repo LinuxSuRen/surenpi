@@ -62,3 +62,10 @@ toc: true
 ```
 curl http://localhost:8080/jenkins/job/jobName/api/json --header "Authorization: Basic `echo -n user:passwd | base64`"
 ```
+
+
+https://129.28.182.197/jenkins/asynchPeople/api/json
+//user/admin/submitDescription
+//user/admin/delete
+//%s/user/%s/descriptorByName/jenkins.security.ApiTokenProperty/rename
+//%s/user/%s/descriptorByName/jenkins.security.ApiTokenProperty/Revoke
