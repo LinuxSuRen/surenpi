@@ -11,7 +11,7 @@ toc: true
 
 你可以通过如下的方式来访问 Jenkins：
 
-# 单个任务
+## 单个任务
 
 `curl http://localhost:8080/jenkins/job/jobName/api/json?pretty=true` 获取任务信息
 
@@ -25,7 +25,11 @@ toc: true
 
 `curl -X POST http://localhost:8080/jenkins/job/jobName/doDelete` 删除任务
 
-# 构建历史
+## 搜索任务
+
+`curl https://localhost:8080/jenkins/search/suggest?query=test` 通过关键字搜索任务
+
+## 构建历史
 
 `curl http://localhost:8080/jenkins/job/jobName/1/consoleText` 获取构建历史的控制台日志
 
@@ -43,15 +47,15 @@ toc: true
 
 `curl http://localhost:8080/jenkins/job/jobName/lastCompletedBuild/consoleText` 最近一次完成的构建日志
 
-# 插件管理
+## 插件管理
 
 `curl -u admin:token http://localhost:8080/jenkins/pluginManager/uploadPlugin -F "name=@target/demo.hpi"` 上传插件
 
-# 重启
+## 重启
 
 `curl -X POST http://localhost:8080/jenkins/safeRestart` 必须使用 `POST` 请求
 
-# 认证
+## 认证
 
 这里既支持密码也支持 `Token` 的方式
 
