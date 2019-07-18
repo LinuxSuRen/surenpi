@@ -39,6 +39,13 @@ Jenkins 支持几种安装（启动）方式：
 
 挂载卷 `docker run -v /your/home:/var/jenkins_home jenkins/jenkins:lts`
 
+如果遇到类似下面的错误，可以尝试设置运行的用户：`docker run -u root -v /root/.jenkins:/var/jenkins_home jenkins/jenkins:lts`
+
+```
+Can not write to /var/jenkins_home/copy_reference_file.log. Wrong volume permissions?
+touch: cannot touch '/var/jenkins_home/copy_reference_file.log': Permission denied
+```
+
 ### Kubernetes
 
 ### Helm
