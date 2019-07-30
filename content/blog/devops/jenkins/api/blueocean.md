@@ -82,4 +82,16 @@ toc: true
 }
 ```
 
+## 等待输入
+
+```
+curl -v -u 'xxx:yyy' -H 'Jenkins-Crumb: 40b3007303bfde11c3da475d8cae91b4' -H 'Content-Type: application/json' -X POST http://localhost:8080/jenkins/blue/rest/organizations/jenkins/pipelines/p31/runs/22/nodes/9/steps/12/ -d '{
+   "id" : "23a650bfcb70a78700d7178183722292",
+   "parameters" : [{
+     "name" : "branch",
+     "value" : "master"
+   }]
+ }'
+```
+
 更多来自 Blue Ocean 的 Restful API 请参考 https://github.com/jenkinsci/blueocean-plugin/tree/master/blueocean-rest
