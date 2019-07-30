@@ -13,7 +13,7 @@ toc: true
 
 `http://localhost:8080/jenkins/blue/rest/organizations/jenkins/pipelines/demo/runs/7/tests/?status=FAILED&state!=REGRESSION&start=0&limit=101`
 
-`ttps://129.28.182.197/jenkins/blue/rest/organizations/jenkins/pipelines/demo/runs/7/tests/?status=SKIPPED&start=0&limit=101`
+`ttps://localhost:8080/jenkins/blue/rest/organizations/jenkins/pipelines/demo/runs/7/tests/?status=SKIPPED&start=0&limit=101`
 
 `http://localhost:8080/jenkins/blue/rest/organizations/jenkins/pipelines/demo/runs/7/tests/?state=FIXED&start=0&limit=101`
 
@@ -62,6 +62,23 @@ toc: true
   "message" : "bad state PASSED",
   "code" : 400,
   "errors" : [ ]
+}
+```
+
+## 测试报告概览
+
+`http://localhost:8080/blue/rest/organizations/jenkins/pipelines/folder/pipelines/pipelineName/runs/4/blueTestSummary/`
+
+返回的 JSON 数据如下：
+```
+{
+"existingFailed": 0,
+"failed": 0,
+"fixed": 0,
+"passed": 2,
+"regressions": 0,
+"skipped": 0,
+"total": 2
 }
 ```
 
