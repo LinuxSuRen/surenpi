@@ -37,6 +37,8 @@ toc: true
 
 `curl -X POST http://localhost:8080/jenkins/job/jobName/1/doDelete` 删除构建历史
 
+`curl -X POST http://localhost:8080/jenkins/job/jobName/1/stop` 停止构建
+
 下面是特定情况的构建：
 
 `curl http://localhost:8080/jenkins/job/jobName/lastBuild/consoleText` 最近一次构建的日志
