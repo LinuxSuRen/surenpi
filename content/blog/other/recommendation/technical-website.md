@@ -11,3 +11,5 @@ toc: true
 [X-lab  开放实验室阅读俱乐部](https://shimo.im/docs/Ih2EVbd3cOkgdpMm/read)
 
 [Code Cartoon](https://code-cartoons.com/)
+
+[cloud shell](https://console.cloud.google.com/cloudshell/editor?pli=1&shellonly=true)
