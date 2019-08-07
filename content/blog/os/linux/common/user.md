@@ -12,3 +12,12 @@ description: user
 `su user-name`
 
 `userdel user-name`
+
+## sudo
+
+`xx is not in the sudoers file.`
+
+这时候可以使用 root 账号修改配置文件来解决：`vim /etc/sudoers`
+
+或者把用户加到用户组 `sudo` 中。
+`usermod -a -G sudo jenkins`
