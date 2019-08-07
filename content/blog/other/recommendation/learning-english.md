@@ -28,4 +28,11 @@ toc: true
 |名称|梯子|备注|
 |---|---|---|
 |[BusinessDictionary](http://www.businessdictionary.com/)|no|商业相关的词汇|
+|[FreeDictionary](https://www.thefreedictionary.com/)| no | 丰富的词条、习语等|
 |[Google](https://translate.google.cn/)|no|支持很多种语言|
+
+## 词汇
+
+pharmaceutical
+condition engineer
+spare time
