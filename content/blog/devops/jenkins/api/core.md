@@ -15,7 +15,9 @@ toc: true
 
 `curl http://localhost:8080/jenkins/job/jobName/api/json?pretty=true` 获取任务信息
 
-`curl -X POST http://localhost:8080/jenkins/job/jobName/build` 触发构建
+`curl -X POST http://localhost:8080/jenkins/job/jobName/build` 触发构建，API 返回码是 201
+
+``
 
 `curl -X POST http://localhost:8080/jenkins/job/jobName/submitDescription?description=hello` 添加描述信息
 
@@ -52,6 +54,10 @@ toc: true
 ## 插件管理
 
 `curl -u admin:token http://localhost:8080/jenkins/pluginManager/uploadPlugin -F "name=@target/demo.hpi"` 上传插件
+
+### 插件列表
+
+/pluginManager/plugins
 
 ## 重启
 
