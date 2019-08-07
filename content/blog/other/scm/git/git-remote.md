@@ -32,6 +32,10 @@ git remote set-url --add --push origin https://github.com/jenkins-zh/jenkins-cli
 git remote set-url --add --push origin https://gitee.com/jenkins-zh/jenkins-cli.git
 ```
 
+我们也可以通过下面的命令删除上面的配置
+
+`git remote set-url --delete --push origin https://gitee.com/jenkins-zh/jenkins-cli.git`
+
 ## 删除远程仓库
 
 我们可以通过下面的命令，删除一个远程仓库：
