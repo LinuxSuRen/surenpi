@@ -6,7 +6,11 @@ draft: false
 toc: true
 ---
 
-## brew
+## 参数
+
+`$1` 是第一个参数
+
+## 命令自动补全
 
 我们可以使用 `brew` 来安装 bash 的自动补全：`brew install bash-completion`
 

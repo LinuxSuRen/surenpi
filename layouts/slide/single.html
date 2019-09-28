@@ -97,6 +97,10 @@
     float: right;
     padding-top: 1em;
   }
+
+  .img-max-width-80 img {
+    max-width: 80%;
+  }
   </style>
   <script src="/remark-latest.min.js"></script>
 </head>
@@ -105,7 +109,19 @@
 {{ .RawContent }}
   </textarea>
   <script>
-    var slideshow = remark.create({});
+    var radio = sessionStorage.getItem('radio')
+    var click = sessionStorage.getItem('click')
+    var touch = sessionStorage.getItem('touch')
+    var scroll = sessionStorage.getItem('scroll')
+    var navigation = {
+      click: click == null ? true : JSON.parse(click),
+      touch: touch == null ? true : JSON.parse(touch),
+      scroll: scroll == null ? true : JSON.parse(scroll),
+    }
+    var slideshow = remark.create({
+      ratio: radio ? radio : '16:9',
+      navigation: navigation,
+    });
   </script>
 </body>
 </html>

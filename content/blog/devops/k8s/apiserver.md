@@ -31,3 +31,9 @@ curl -k  https://localhost:6443/api/v1/namespaces --header "Authorization: Beare
 {{% note %}}
 需要确保的是，所使用 `Token` 对应的 `ServiceAccount` 具有所访问的资源的权限。
 {{% /note %}}
+
+# Restful
+
+`k8s.io/apiserver/pkg/registry/rest.NamedCreater` POST 类的接口
+
+`k8s.io/apiserver/pkg/registry/rest.GetterWithOptions` GET 类的接口

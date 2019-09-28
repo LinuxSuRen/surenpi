@@ -57,3 +57,7 @@ journalctl -u kubelet -f
 该命令，可以通过 `json` 或者 `yaml` 格式来对资源*打补丁*。下面，给出一个使用 `json` 的例子：
 
 `kubectl patch deploy template -n namespace --patch '{"status":{"phase":"Pending"}}'`
+
+## 更新镜像
+
+`kubectl set image deploy/your-deployment -n namespace imageName=surenpi/image`
