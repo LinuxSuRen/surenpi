@@ -14,5 +14,6 @@ jobs:
       uses: jenkins-zh/hugo-gh-actions@master
       env:
         WEBSITE_GIT: "git@github.com:LinuxSuRen/linuxsuren.github.io.git"
+        WEBSITE_DIR: "linuxsuren.github.io"
         GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}
         HUGO_VERSION: "0.53"
