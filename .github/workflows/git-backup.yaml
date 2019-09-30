@@ -1,4 +1,4 @@
-name: backup git repo
+name: Backup git repo
 
 on:
   push:
