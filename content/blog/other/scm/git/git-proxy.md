@@ -11,11 +11,11 @@ toc: true
 `git config --global http.proxy http://proxyUsername:proxyPassword@proxy.server.com:port`
 
 ## 部分代理
-我们也可以对指定的域名配置代理
+我们也可以对指定的域名配置代理，格式为：`git config --global http.https://github.com.proxy http://proxyUsername:proxyPassword@proxy.server.com:port`
 
 ```
-git config --global http.https://domain.com.proxy http://proxyUsername:proxyPassword@proxy.server.com:port
-git config --global http.https://domain.com.sslVerify false
+git config --global http.https://github.com.proxy 127.0.0.1:1087
+git config --global http.https://github.com.sslVerify false
 ```
 
 ## 查看配置
