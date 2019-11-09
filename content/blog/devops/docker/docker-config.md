@@ -4,19 +4,22 @@ description: 配置
 toc: true
 ---
 
-# 代理
-给 Docker 设置代理
-
-创建目录 `mkdir /etc/systemd/system/docker.service.d`
-
-编辑配置文件 `vim /etc/systemd/system/docker.service.d/http-proxy.conf`
+## 代理
+给 Docker 设置代理，该代理是在拉取镜像时的网络代理设置
 
 ```
+mkdir -p /etc/systemd/system/docker.service.d
+cat > /etc/systemd/system/docker.service.d/http-proxy.conf << EOF
 [Service]
-Environment="HTTP_PROXY=http://ip:port"
+Environment="HTTP_PROXY=http://your.proxy:8080"
+Environment="HTTPS_PROXY=http://your.proxy:8080"
+Environment="NO_PROXY=127.0.0.1,localhost
+EOF
+systemctl daemon-reload
+systemctl restart docker
 ```
 
-# Insecure
+## Insecure
 
 `vim /etc/systemd/system/docker.service.d/docker.conf`
 
@@ -34,7 +37,7 @@ Ubuntu 下修改配置文件 `vim /etc/default/docker` 添加如下内容：
 
 `DOCKER_OPTS="$DOCKER_OPTS --insecure-registry registry_server_name/ip:port"`
 
-# User
+## User
 
 让普通用户可以执行 docker
 
@@ -44,6 +47,6 @@ Ubuntu 下修改配置文件 `vim /etc/default/docker` 添加如下内容：
 
 `sudo service docker restart`
 
-# 重启服务
+## 重启服务
 
 执行命令 `systemctl daemon-reload && systemctl stop docker && systemctl start docker`
