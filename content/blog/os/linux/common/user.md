@@ -21,3 +21,7 @@ description: user
 
 或者把用户加到用户组 `sudo` 中。
 `usermod -a -G sudo jenkins`
+
+## 设置用户
+
+`usermod --shell /bin/bash user-name`
