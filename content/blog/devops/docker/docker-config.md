@@ -13,10 +13,27 @@ cat > /etc/systemd/system/docker.service.d/http-proxy.conf << EOF
 [Service]
 Environment="HTTP_PROXY=http://your.proxy:8080"
 Environment="HTTPS_PROXY=http://your.proxy:8080"
-Environment="NO_PROXY=127.0.0.1,localhost
+Environment="NO_PROXY=127.0.0.1,localhost"
 EOF
 systemctl daemon-reload
 systemctl restart docker
+```
+
+## 运行时代理
+
+```
+{
+        "HttpHeaders": {
+                "User-Agent": "Docker-Client/19.03.4 (linux)"
+        },
+        "proxies": {
+                "default": {
+                        "httpProxy": "http://172.17.212.62:3128",
+                        "httpsProxy": "http://172.17.212.62:3128",
+                        "noProxy": "127.0.0.1,localhost,172.17.212.63"
+                }
+        }
+}
 ```
 
 ## Insecure
