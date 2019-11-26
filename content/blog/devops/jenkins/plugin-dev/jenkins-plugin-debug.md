@@ -2,7 +2,9 @@
 title: Jenkins 插件调试
 description: Jenkins 插件调试
 date: 2019-11-26
-keywords: jenkins plugin
+keywords:
+- jenkins
+- plugin
 toc: true
 ---
 
