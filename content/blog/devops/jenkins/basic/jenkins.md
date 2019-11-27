@@ -99,6 +99,10 @@ Jenkins 在首次运行时，会有一个配置向导，可以通过下面的参
 
 `--argumentsRealm.passwd.admin=admin --argumentsRealm.roles.admin=admin`
 
+## HTTPS
+
+`--httpsPort=8083 --httpsCertificate=/var/lib/jenkins/cert --httpsPrivateKey=/var/lib/jenkins/pk`
+
 ## 重启
 
 如果，我们需要重新启动 Jenkins，没有必要把进程杀掉后再次启动。可以直接在 Jenkins 界面上就实现重启。
