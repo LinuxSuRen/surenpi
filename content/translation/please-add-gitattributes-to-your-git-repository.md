@@ -17,10 +17,10 @@ draft: true
 不是所有的开发者都是一样的，不能因为你是在 Windows 上使用 Visual Studio Code 开发的，就期望别的 Pull Request 也是基于相同的开发
 环境完成的（在 MacOS 上可能用的是 Sublime Text2）。
 
-As mentioned above the developers are using different OSes (Windows and MacOS) the default for the line ending will differ. On the Windows machine the default for the line ending is a Carriage Return Line Feed (CRLF), whereas on Linux/MacOS it's a Line Feed (LF).
-正如上面提到的，
+正如上面提到的，开发者使用不同的操作系统，默认的文件结尾行就会不同。在 Windows 上默认的是回车换行（Carriage Return Line 
+Feed, CRLF），然而，在 Linux/MacOS 上则是换行（Line Feed, LF）。
 
-To the naked eye the content will look the same, so why should we bother???
+从表面看起来，内容都是一样的，那我们为什么还会困扰呢？??
 
 Well, if you have prettier enabled and the endOfLine property is set to lf.
 {
