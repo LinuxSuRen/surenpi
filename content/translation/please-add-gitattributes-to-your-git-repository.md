@@ -60,7 +60,7 @@ git push
 正如上面提到的，在仓库的根目录下创建名为 `.gitattributes` 的文件。一旦文件推送到 git 服务器后，请确保你的本地
 仓库是干净的、无需提交的。使用命令 `git status` 可以检查是否你的仓库是干净的。
 
-Note: If you still have files to push or commit, please make sure that these actions are performed or the files are stashed before you perform the next commands.
+**注意**：如果你还有未提及或推送的文件，请确保这些动作已经被执行过了，或者在执行下面的命令前 `stash` 过。
 
 ## 重置 GitAttributes
 ```
@@ -68,14 +68,11 @@ git rm --cached -r
 git reset --hard
 ```
 
-The above commands will now update the files for the repo using the newly defined line ending as specified in the .gitattributes.
+上面的命令就会根据文件 `.gitattributes` 中的定义，更新文件的结尾行。
 
-Any changes or new changes will automatically use the line endings specified for that file type.
+任何变更都会自动使用指定文件的文件结尾行格式。
 
-Next step is to inform any team mate or collaborator, to run the GitAttributes Reset commands.
+下一步，可以通知团队成员或者协作者去执行 Git 属性重置的命令。
 
-Now prettier won't complain about CR and all developers can now live in peace! ☮️
+现在，prettier 就不会在提示有关 CR 的问题了，所有的开发者都可以安心写代码了! ☮️
 
-Code File With No Linting Errors - .gitattributes
-
-Code File With No Prettier Linting Errors
