@@ -2,7 +2,7 @@
 title: Please Add .gitattributes To Your Git Repository
 origin: https://dev.to/deadlybyte/please-add-gitattributes-to-your-git-repository-1jld
 translator: linuxsuren
-draft: true
+description: Git attributes
 ---
 
 ##　什么是 .gitattributes ？
@@ -32,7 +32,7 @@ Feed, CRLF），然而，在 Linux/MacOS 上则是换行（Line Feed, LF）。
 
 在 Windows 上，开发者会看到如下的检查警告。
 
-!(linting-errors.png)[linting-errors.png]
+![linting-errors.png](../linting-errors.png)
 
 这时候 `.gitattributes` 就可以派上用场了 🦸！
 
@@ -76,3 +76,4 @@ git reset --hard
 
 现在，prettier 就不会在提示有关 CR 的问题了，所有的开发者都可以安心写代码了! ☮️
 
+![no-prettier-linting-errors.png](../no-prettier-linting-errors.png)
