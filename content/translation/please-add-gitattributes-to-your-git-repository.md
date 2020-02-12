@@ -22,39 +22,52 @@ Feed, CRLF），然而，在 Linux/MacOS 上则是换行（Line Feed, LF）。
 
 从表面看起来，内容都是一样的，那我们为什么还会困扰呢？??
 
-Well, if you have prettier enabled and the endOfLine property is set to lf.
+好的，如果你启用了该功能，并设置属性 `endOfLine` 为 `lf` 的话。
+
+```
 {
   "endOfLine": "lf"
 }
-On the Windows machine the developer will encounter linting issues from prettier, like those below.
+```
 
-Code File With Prettier Linting Errors - .gitattributes
+在 Windows 上，开发者会看到如下的检查警告。
 
-Code File With Prettier Linting Errors
-This is where .gitattributes comes to the rescue and saves the day 🦸!
+!(linting-errors.png)[linting-errors.png]
 
-## New Repository (Repo)
-To add the .gitattributes to the repo first you need to create a file called .gitattributes into the root folder for the repo.
+这时候 `.gitattributes` 就可以派上用场了 🦸！
 
-Below is an example of the contents for the .gitattributes file.
+## 新仓库
+首先，在仓库的根目录下创建名为 `.gitattributes` 的文件。
+
+下面，是一份 `.gitattributes` 文件的样例内容。
+```
 *.js    eol=lf
 *.jsx   eol=lf
 *.json  eol=lf
+```
 
-Commit this file to the repo and push your changes to the server.
+把该文件提交并推送到服务器上。
+
+```
 git add .
 git commit -m "Added .gitattributes to repo"
 git push
-Now when anyone gets the code from the repo the default correct line ending will be used automatically via git, when creating and modifying the files.
+```
 
-## Add to Existing Git Repository (Repo)
-Follow the steps mentioned in the New Repository (Repo) steps to create the .gitattributes file. Once the file has been pushed to the git server then make sure that your local repo is clean and has nothing to commit. Use git status to determine whether your repo is clean.
-git status
+现在，任何人从仓库获取代码后，创建以及修改文件时，git 都会自动地设置好正确的文件结尾。
+
+## 增加到已有的 Git 仓库
+正如上面提到的，在仓库的根目录下创建名为 `.gitattributes` 的文件。一旦文件推送到 git 服务器后，请确保你的本地
+仓库是干净的、无需提交的。使用命令 `git status` 可以检查是否你的仓库是干净的。
+
 Note: If you still have files to push or commit, please make sure that these actions are performed or the files are stashed before you perform the next commands.
 
-## GitAttributes Reset
+## 重置 GitAttributes
+```
 git rm --cached -r
 git reset --hard
+```
+
 The above commands will now update the files for the repo using the newly defined line ending as specified in the .gitattributes.
 
 Any changes or new changes will automatically use the line endings specified for that file type.
