@@ -1,11 +1,12 @@
 ---
 title: Please Add .gitattributes To Your Git Repository
 origin: https://dev.to/deadlybyte/please-add-gitattributes-to-your-git-repository-1jld
+author: deadlybyte
 translator: linuxsuren
 description: Git attributes
 ---
 
-##　什么是 .gitattributes ？
+## 什么是 .gitattributes ？
 当执行 git 动作时，.gitattributes 文件允许你指定由 git 使用的文件和路径的属性，例如：`git commit` 等。
 
 换句话说，每当有文件保存或者创建时，git 会根据指定的属性来自动地保存。
