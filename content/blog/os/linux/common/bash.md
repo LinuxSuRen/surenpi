@@ -22,3 +22,12 @@ toc: true
 ## 目录
 
 我们可以把特定命令的自动补全脚本保存到这个目录中 `/usr/local/etc/bash_completion.d`
+
+## 循环
+
+```
+for i in {1..5}
+do
+  echo $i
+done
+```
