@@ -1,9 +1,10 @@
 ---
-title: Please Add .gitattributes To Your Git Repository
+title: 请把 .gitattributes 添加到你的 Git 仓库中
 origin: https://dev.to/deadlybyte/please-add-gitattributes-to-your-git-repository-1jld
 author: deadlybyte
 translator: linuxsuren
 description: Git attributes
+date: 2020-02-15
 ---
 
 ## 什么是 .gitattributes ？
