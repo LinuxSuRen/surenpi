@@ -10,4 +10,6 @@
 
 ## About Me
 
+用微信扫一扫下面的二维码，关注我的微信公众号
+
 ![微信公众号](static/qrcode_for_linuxsuren.jpg)
