@@ -3,6 +3,7 @@ title: Maven
 description: Maven 是非常流行的一个 Java 持续构建工具
 toc: true
 keywords: maven
+date: 2020-02-17
 ---
 
 {{< youtube "cynDKA03bWA" >}}
@@ -11,7 +12,8 @@ keywords: maven
 
 跳过JavaDoc `mvn package -Dmaven.javadoc.skip=true`
 
-跳过测试 `mvn package -DskipTests=true`
+跳过运行测试 `mvn package -DskipTests=true`
+跳过测试代码的构建以及运行 `mvn package -Dmaven.test.skip=true`
 
 `mvn package -U` 强制更新快照版本的依赖
 
