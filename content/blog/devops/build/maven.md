@@ -8,7 +8,7 @@ date: 2020-02-17
 
 {{< youtube "cynDKA03bWA" >}}
 
-# 构建
+## 构建
 
 跳过JavaDoc `mvn package -Dmaven.javadoc.skip=true`
 
@@ -17,17 +17,17 @@ date: 2020-02-17
 
 `mvn package -U` 强制更新快照版本的依赖
 
-# 离线
+## 离线
 
 通常情况下，Maven 需要从网络上下载依赖文件，这样的话，执行效率会比较低。如果你确保本地仓库已经有了所有的依赖文件的话，可以添加参数使 Maven 不再从网络上下载，直接使用本地的依赖。例如：
 
 `mvn clean package --offline`
 
-# 部署
+## 部署
 
 `mvn deploy`
 
-# 多模块
+## 多模块
 
 ## 部署
 
@@ -51,7 +51,7 @@ Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!
 ```
 
-# 查看依赖
+## 查看依赖
 
 `mvn dependency:tree` 查看依赖树
 
@@ -61,6 +61,25 @@ Bob-->Alice: I am good thanks!
 
 `mvn help:effective-pom`
 
-# 调试
+## 调试
 
 `mvn package -X` 查看调试信息
+
+## 网络代理
+```
+<settings>
+  <proxies>
+   <proxy>
+      <id>example-proxy</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>proxy.example.com</host>
+      <port>8080</port>
+      <username>proxyuser</username>
+      <password>somepassword</password>
+      <nonProxyHosts>www.google.com|*.example.com</nonProxyHosts>
+    </proxy>
+  </proxies>
+</settings>
+```
+
