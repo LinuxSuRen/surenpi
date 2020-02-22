@@ -1,10 +1,14 @@
 ---
 title: "Bash"
 description: "Bash"
-date: 2019-09-29T17:31:55+08:00
+date: 2020-02-22
 draft: false
 toc: true
 ---
+
+## 字符串
+
+替换 `echo "ab/c/df" | sed 's/\//-/g'`
 
 ## 参数
 
