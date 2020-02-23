@@ -28,3 +28,7 @@ jobs:
           title: "Development Build"
           files: |
             *.txt
+
+      - name: Upload to bintray
+        run: |
+          curl -T a.txt -ulinuxsuren:${{ secrets.BINTRAY_TOKEN }} https://api.bintray.com/content/jenkins-zh/jenkins-cli/jenkins-cli/dev/jcli
