@@ -17,6 +17,7 @@ jobs:
           echo "done!"
           echo sfsdf > a.txt
           echo dfdf > b.txt
+          echo dfdf > c.txt
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
