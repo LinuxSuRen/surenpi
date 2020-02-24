@@ -14,7 +14,7 @@ jobs:
           homebrew-tap: jenkins-zh/homebrew-jcli
           base-branch: master
           download-url: https://github.com/LinuxSuRen/surenpi/releases/download/v0.0.4/jcli-darwin-amd64.tar.gz
-          commit-message: {{formulaName}} {{version}}
+          # commit-message: {{formulaName}} {{version}}
         env:
           COMMITTER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
