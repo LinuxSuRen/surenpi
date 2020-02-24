@@ -25,5 +25,17 @@ toc: true
 
 要注意的是，插件会选择上面的限制值和当前系统的核心数中的较小值。
 
+## Webhook
+多分支流水线，可以自动添加 webhook 到 git 服务上，并基于 webhook 推送的事件负责分支流水线的生命流程管理。下面，是部分 git 服务中
+所对应的 webhook 地址：  
+
+| git 服务 | 地址 | ContentType | 限制 |
+|---|---|---|---|
+| Bitbucket | `http://localhost:8080/jenkins/bitbucket-scmsource-hook/notify` | | 每个仓库最多有50个 ｜
+| Gitlab | `http://localhost:8080/jenkins/gitlab-webhook/post` | `application/json` | ｜
+| GitHub | `http://localhost:8080/jenkins/github-webhook/` | `application/json` | ｜
+
+Jenkins 中的多分支流水线删除后，也会同时删除 Bitbucket 中的 webhook 记录，但是 GitHub 不会。
+
 ## 缺点
 对于 PR 的动态发现，目前只有 `GitHub`、`Gitlab` 和 `Bitbucket` 支持。
