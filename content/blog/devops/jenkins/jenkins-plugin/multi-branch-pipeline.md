@@ -35,7 +35,7 @@ toc: true
 | Gitlab | `http://localhost:8080/jenkins/gitlab-webhook/post` | `application/json` | ｜
 | GitHub | `http://localhost:8080/jenkins/github-webhook/` | `application/json` | ｜
 
-Jenkins 中的多分支流水线删除后，也会同时删除 git 服务中的 webhook 记录。
+Jenkins 中的多分支流水线删除后，也会同时删除 Bitbucket 中的 webhook 记录，但是 GitHub 不会。
 
 ## 缺点
 对于 PR 的动态发现，目前只有 `GitHub`、`Gitlab` 和 `Bitbucket` 支持。
