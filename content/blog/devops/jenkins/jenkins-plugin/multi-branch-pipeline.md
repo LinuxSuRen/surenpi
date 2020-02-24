@@ -29,11 +29,11 @@ toc: true
 多分支流水线，可以自动添加 webhook 到 git 服务上，并基于 webhook 推送的事件负责分支流水线的生命流程管理。下面，是部分 git 服务中
 所对应的 webhook 地址：  
 
-｜ git 服务 ｜ 地址 |
+｜ git 服务 ｜ 地址 | ContentType |
 |---|---|
-| Bitbucket | `http://localhost:8080/jenkins/bitbucket-scmsource-hook/notify` |
-| Gitlab | `http://localhost:8080/jenkins/gitlab-webhook/post` |
-| GitHub | |
+| Bitbucket | `http://localhost:8080/jenkins/bitbucket-scmsource-hook/notify` | |
+| Gitlab | `http://localhost:8080/jenkins/gitlab-webhook/post` | `application/json` |
+| GitHub | `http://localhost:8080/jenkins/github-webhook/` | `application/json` |
 
 ## 缺点
 对于 PR 的动态发现，目前只有 `GitHub`、`Gitlab` 和 `Bitbucket` 支持。
