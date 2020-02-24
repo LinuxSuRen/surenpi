@@ -30,7 +30,7 @@ toc: true
 所对应的 webhook 地址：  
 
 ｜ git 服务 ｜ 地址 | ContentType |
-|---|---|
+|---|---|---|
 | Bitbucket | `http://localhost:8080/jenkins/bitbucket-scmsource-hook/notify` | |
 | Gitlab | `http://localhost:8080/jenkins/gitlab-webhook/post` | `application/json` |
 | GitHub | `http://localhost:8080/jenkins/github-webhook/` | `application/json` |
