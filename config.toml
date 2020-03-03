@@ -3,6 +3,8 @@ languageCode = "zh-CN"
 defaultContentLanguage = "zh"
 title = "SuRenPi"
 theme = "gohugoTheme"
+enableEmoji = true
+paginate = 50
 
 googleAnalytics = "UA-4216293-5"
 
@@ -137,6 +139,6 @@ icon = "http://jenkins.k8s.surenpi.com/buildStatus/icon?job=surenpi%2Fmaster"
 link = "http://jenkins.k8s.surenpi.com/job/surenpi/job/master/"
 
 [Social]
-twitter = "suren69811254"
+twitter = "linuxsuren"
 github = "LinuxSuRen"
 sinaweibo = "linuxsuren"
