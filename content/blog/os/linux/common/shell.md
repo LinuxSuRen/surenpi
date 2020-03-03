@@ -4,6 +4,13 @@ description: Linux Shell 的基本介绍
 toc: true
 ---
 
+## 执行最近的命令
+有几种方法可以快速地执行最近执行过的命令：
+* `!!` 或者 `!-1` 执行上一个命令
+* `!u` 执行上一个以 `u` 开头的命令
+* `Ctrl+R` 搜索命令
+* `Ctrl+P Ctrl+O`
+
 ## 下载并执行
 
 `curl http://test.com/test.sh | bash -s arg1 arg2`
