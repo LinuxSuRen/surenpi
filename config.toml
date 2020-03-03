@@ -135,8 +135,8 @@ username = "linuxsuren"
 repository = "linuxsuren/linuxsuren.github.io"
 
 [params.build]
-icon = "http://jenkins.k8s.surenpi.com/buildStatus/icon?job=surenpi%2Fmaster"
-link = "http://jenkins.k8s.surenpi.com/job/surenpi/job/master/"
+icon = "https://github.com/LinuxSuRen/surenpi/workflows/Deploy%20to%20GitHub%20Pages/badge.svg"
+link = "https://github.com/LinuxSuRen/surenpi/actions/"
 
 [Social]
 twitter = "linuxsuren"
