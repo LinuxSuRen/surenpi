@@ -1,7 +1,7 @@
 ---
 title: Jenkins 调试
 description: Jenkins 调试
-lastmod: 2019-03-01
+lastmod: 2020-03-06
 toc: true
 keywords:
 - runSetupWizard
@@ -16,7 +16,7 @@ keywords:
 
 `mvn clean install -DskipTests -Dfindbugs.skip=true -Dpmd.skip=true -Dmaven.javadoc.skip=true`
 
-# Docker
+## Docker
 
 如果需要调试运行在 `Docker` 中的 `Jenkins` 实例的话，可以通过增加 `JVM` 参数来实现。对 Jenkins 启动过程感兴趣的同学，可以自行翻阅[jenkins.sh](https://github.com/jenkinsci/docker/blob/master/jenkins.sh)来了解更多细节。
 
