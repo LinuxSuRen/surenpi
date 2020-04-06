@@ -6,4 +6,4 @@ menu: translation
 
 文章翻译区域
 
-联系英文听力的网站：https://www.esl-lab.com/
+练习英文听力的网站：https://www.esl-lab.com/
