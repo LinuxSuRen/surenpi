@@ -16,6 +16,8 @@ toc: true
 
 2. 在服务器端~/.ssh/authorized_keys文件中添加id_rsa.pub的内容
 
+或者，在需要无密码登录的机器上执行：`ssh-copy-id user@ip`
+
 ## 证书登陆
 
 `ssh -i test.pem root@localhost`
