@@ -4,7 +4,7 @@ description: golang
 toc: true
 ---
 
-# Environment
+## Environment
 
 环境变量 `GOROOT` 是 Golang 的安装根目录
 
@@ -14,7 +14,10 @@ toc: true
 * bin 执行 go get 等命令的二进制文件下载目录
 * pkg 生成编译文件的目录
 
-# Proxy
+### GOGC
+`GOGC` 是用来控制内存垃圾回收（GC）被触发时的比例，默认值为：`GOGC=100`。`GOGC=off`可以完全关闭垃圾回收。
+
+## Proxy
 
 在使用命令 `go get xxx` 时，如果需要翻墙的话，可以考虑下面的方案
 
@@ -22,6 +25,6 @@ toc: true
 
 设置忽略的代理 `git config --global no.proxy '*.github.com'`
 
-# Troubleshooting
+## Troubleshooting
 
 `--oom-kill-disable=false`
