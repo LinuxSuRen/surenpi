@@ -42,6 +42,10 @@ toc: true
 
 `docker logs -f 94a5fa599b05`
 
+当一个容器运行当时间长了以后，就可能会由于日志输出积累过多导致日志文件占用过多的存储。我们可以通过下面的命令，简单地删除来自容器中的日志文件：
+
+`find /var/lib/docker/containers/ -type f -name "*.log" -delete`
+
 # 删除容器
 
 我们可以通过命令 `docker rm 94a5fa599b05` 删除一个容器。当然，前提条件是该容器处于已停止的状态。
