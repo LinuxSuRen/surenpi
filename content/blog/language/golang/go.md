@@ -25,6 +25,11 @@ toc: true
 
 设置忽略的代理 `git config --global no.proxy '*.github.com'`
 
+## Package import
+If you want to use a custom domain in your Go import path, please read more about [govanit](https://github.com/GoogleCloudPlatform/govanityurls). Here is [a blog](https://tonybai.com/2017/06/28/set-custom-go-get-import-path-for-go-package/) related with it.
+
+A online service of [Go Vanity Server](https://github.com/thumbai/thumbai).
+
 ## Troubleshooting
 
 `--oom-kill-disable=false`
