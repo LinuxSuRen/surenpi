@@ -53,7 +53,7 @@ Linux 下，添加环境环境变量为：`export http_proxy=127.0.0.1:8080` 以
 ```
 server {
   resolver 8.8.8.8;
-  listen 80;
+  listen 8080;
 
   location ~ .*/releases/.* {
     proxy_pass https://nexus.xxx.xxx/repository/github-proxy$request_uri;
