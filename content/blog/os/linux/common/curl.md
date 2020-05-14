@@ -41,6 +41,26 @@ curl --header "Authorization: Bearer $token" --insecure https://localhost:6443/a
 * http_version
 
 ## 代理
+`curl` 默认会从环境变量中获取代理配置信息，但如果给定了参数 `--proxy` 的话，就会使用参数中给定的。
+
+Linux 下，添加环境环境变量为：`export http_proxy=127.0.0.1:8080` 以及 `export https_proxy=127.0.0.1:8080`。这里需要注意的是：`HTTP_PROXY` 是不支持的。
 
 语法：`curl --proxy <[protocol://][user:password@]proxyhost[:port]> url`
+
 示例：`curl --proxy http://user:password@proxyhost:port http://yourserver.com`
+
+我们可以使用 Nginx 作为一个代理服务器，参考配置如下：
+```
+server {
+  resolver 8.8.8.8;
+  listen 80;
+
+  location ~ .*/releases/.* {
+    proxy_pass https://nexus.xxx.xxx/repository/github-proxy$request_uri;
+  }
+
+  location / {
+    proxy_pass http://$http_host$request_uri;
+  }
+}
+```
