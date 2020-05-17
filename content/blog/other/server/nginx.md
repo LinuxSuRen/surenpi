@@ -6,7 +6,21 @@ keywords:
 - rewrite
 ---
 
-# 重定向
+Nginx 配置文件的一大特点是：必须要以分号结尾。
+
+## 变量
+
+| Name | Description |
+|---|---|
+| `$scheme` | The scheme of HTTP request, could be `http`, `https` |
+| `$host` |  |
+| `$request_uri` | ] |
+
+## 逻辑判断
+
+## ngx_http_rewrite_module
+
+### rewrite
 
 ```
 server {
@@ -19,4 +33,20 @@ server {
 }
 ```
 
-# HTTPS
+### return
+
+```
+Syntax: return code [text];
+        return code URL;
+        return URL;
+Default: -
+Context: server, location, if
+```
+
+```
+if ($host = "github.com") {
+        return 301 https://nexus-b.alauda.cn/repository/github-proxy$request_uri;
+}
+```
+
+## HTTPS

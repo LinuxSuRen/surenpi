@@ -4,7 +4,7 @@ description: wget
 toc: true
 ---
 
-# 代理
+## 代理
 
 通过命令参数设置代理 `wget https://google.com -e "https_proxy=http://localhost:1234"`
 
@@ -12,11 +12,14 @@ toc: true
 
 `alias wall-wget='wget -e "https_proxy=http://localhost:8123" '`
 
-# 递归下载
+## 递归下载
 
 `wget -A .hpi -np -r http://mirrors.jenkins-ci.org/plugins/hugo/` 参数 -A 指定要下载的文件扩展名 -np 不递归父目录 -r 表示递归下载
 
-wget各种选项分类列表
+## HSTS
+`wget http://github.com/jenkins-zh/jenkins-cli/releases/latest/download/jcli-darwin-amd64.tar.gz --no-hsts`
+
+## 选项分类列表
 
 * 启动
 
