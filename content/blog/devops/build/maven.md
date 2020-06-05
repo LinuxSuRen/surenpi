@@ -83,3 +83,14 @@ Bob-->Alice: I am good thanks!
 </settings>
 ```
 
+## 镜像
+```
+  <mirrors>
+    <mirror>
+      <id>nexus-aliyun</id>
+      <name>Nexus aliyun</name>
+      <url>https://nexus-b.alauda.cn/repository/maven-public/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
+```
