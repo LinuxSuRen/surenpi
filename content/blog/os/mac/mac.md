@@ -54,3 +54,8 @@ description: Mac 快捷键
 3. 执行命令 `rm /var/db/.applesetupdone`
 
 操作系统重启后，会提示用户重新创建一个管理员身份。注意，这不会删除之前的用户信息。登陆系统后，你可以用户管理功能再次把之前的用户身份找回来。
+
+# 翻盖开机
+取消命令：`sudo nvram AutoBoot=%00`
+
+启用命令：`sudo nvram AutoBoot=%03`
