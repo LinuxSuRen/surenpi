@@ -14,3 +14,4 @@ Jenkins 有很多不包含在 UI 中的配置，可以应对一些特殊情况�
 | `hudson.security.csrf.DefaultCrumbIssuer.EXCLUDE_SESSION_ID` | `true` |
 | `kubernetes.websocket.ping.interval` | `10000` |
 | `org.jenkinsci.plugins.gitclient.Git.timeOut` | `60` |
+| `-Dhudson.security.csrf.GlobalCrumbIssuerConfiguration.DISABLE_CSRF_PROTECTION` | `true` |
