@@ -64,6 +64,21 @@ Ubuntu 下修改配置文件 `vim /etc/default/docker` 添加如下内容：
 
 `sudo service docker restart`
 
+## 并发下载（推送）镜像
+
+下面的示例中给出了如何设置（`/etc/docker/daemon.json`）并发下载或者推送镜像层的配置：
+```
+{
+	"max-concurrent-uploads": 20,
+	"max-concurrent-downloads": 20,
+	"registry-mirrors": [
+		"https://qtzsrp4m.mirror.aliyuncs.com",
+		"https://hub-mirror.c.163.com",
+		"https://mirror.baidubce.com"
+	]
+}
+```
+
 ## 重启服务
 
 执行命令 `systemctl daemon-reload && systemctl stop docker && systemctl start docker`
