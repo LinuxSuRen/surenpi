@@ -128,3 +128,16 @@ link = "https://github.com/LinuxSuRen/surenpi/actions/"
 twitter = "linuxsuren"
 github = "LinuxSuRen"
 sinaweibo = "linuxsuren"
+
+[security]
+  enableInlineShortcodes = false
+  [security.exec]
+    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
+    osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
+
+  [security.funcs]
+    getenv = ['^HUGO_', 'REPOSITORY_URL']
+
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']
