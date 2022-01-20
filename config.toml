@@ -1,4 +1,4 @@
-baseURL = "http://surenpi.com"
+baseURL = "https://linuxsuren.github.io/"
 languageCode = "zh-CN"
 defaultContentLanguage = "zh"
 title = "SuRenPi"
@@ -65,20 +65,6 @@ googleAnalytics = "UA-4216293-5"
   weight = 180
   identifier = "other"
   url = "/blog/other"
-
-[[menu.global]]
-  name = "SuRen"
-  weight = 3100
-  identifier = "suren"
-  post = "external"
-  url = "http://blog.surenpi.com"
-
-[[menu.global]]
-  name = "Jenkins 中文社区"
-  weight = 4100
-  identifier = "jenkins"
-  post = "external"
-  url = "https://jenkins-zh.github.io/wechat"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
