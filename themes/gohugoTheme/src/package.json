@@ -24,7 +24,7 @@
     "highlight.js": "^9.11.0",
     "hugo-lunr-zh": "^2.0.0",
     "lazysizes": "^3.0.0",
-    "postcss": "^5.2.16",
+    "postcss": "^8.2.13",
     "postcss-cssnext": "^2.10.0",
     "postcss-import": "^9.1.0",
     "postcss-loader": "^1.3.3",
