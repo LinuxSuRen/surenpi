@@ -14,20 +14,20 @@
         </a>
         <ul id="{{ .Name | urlize}}" class="list pa0 ma0">
           <li class="ma0 pl3 brand-font">
-            <a href="{{.URL}}" class="{{ $.Scratch.Get "listlinkClasses" }}{{if $currentPage.IsMenuCurrent "main" . }} o-50{{end}}">
+            <a href="{{.RelPermalink}}" class="{{ $.Scratch.Get "listlinkClasses" }}{{if $currentPage.IsMenuCurrent "main" . }} o-50{{end}}">
               {{ .Name }} Overview
             </a>
           </li>
           {{ range .Children }}
             <li class="ma0 pl3 brand-font{{if $currentPage.IsMenuCurrent "main" . }} o-50{{end}}">
-              <a href="{{.URL}}" class="{{ $.Scratch.Get "listlinkClasses" }}">
+              <a href="{{.RelPermalink}}" class="{{ $.Scratch.Get "listlinkClasses" }}">
                 {{ .Name }}
               </a>
             </li>
           {{ end }}
         </ul>
       {{ else }}
-        <a href="{{.URL}}" class="ttu {{ $.Scratch.Get "listlinkClasses" }}{{if $currentPage.IsMenuCurrent "main" . }} bg-primary-color{{end}}">
+        <a href="{{.RelPermalink}}" class="ttu {{ $.Scratch.Get "listlinkClasses" }}{{if $currentPage.IsMenuCurrent "main" . }} bg-primary-color{{end}}">
           {{ .Name }}
         </a>
       {{end}}

@@ -44,6 +44,11 @@ googleAnalytics = "UA-4216293-5"
   weight = 300
   identifier = "opensource"
   url = "/opensource"
+[[menu.global]]
+  name = "Slide"
+  weight = 400
+  identifier = "speach"
+  url = "/speach"
 
 [[menu.blog]]
   name = "DevOps"
