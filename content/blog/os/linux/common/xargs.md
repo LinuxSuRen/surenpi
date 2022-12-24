@@ -13,5 +13,5 @@ toc: true
 ## 分批使用参数
 
 ```shell
-gh api /orgs/coredns/repos | jq '.[].full_name' | xargs -n1 gh dev clone
+gh api /orgs/coredns/repos --paginate | jq '.[].full_name' | xargs -n1 gh dev clone
 ```
