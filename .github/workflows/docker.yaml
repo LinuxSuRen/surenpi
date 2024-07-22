@@ -18,6 +18,7 @@ jobs:
     - name: Publish
       env:
         GITHUB_TOKEN: ${{ secrets.GH_PUBLISH_TOKEN }}
+        GH_TOKEN: ${{ secrets.GH_PUBLISH_TOKEN }}
       run: |
         hugo
 
