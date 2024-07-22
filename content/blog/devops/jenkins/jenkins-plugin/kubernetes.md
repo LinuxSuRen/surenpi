@@ -9,7 +9,6 @@ tags:
 - docker
 - agent
 toc: true
-jenkinsIssues: "component%20%3D%20kubernetes-plugin"
 ---
 
 {{< exref "Kubernetes" "https://kubernetes.io/" >}} 是一个容器编排的系统，而 {{< exref "Kubernetes 插件" "https://plugins.jenkins.io/kubernetes" >}}则是 Jenkins 用来调度 K8S 以实现动态计算节点的方式。对{{< ghref "插件源码" "jenkinsci/kubernetes-plugin" >}}感兴趣的童鞋可以了解下。

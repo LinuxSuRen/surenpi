@@ -4,7 +4,6 @@ description: "钉钉通知"
 date: 2019-01-08T11:08:06+08:00
 draft: false
 toc: true
-jenkinsIssues: "component%20%3D%20dingding-notifications-plugin"
 ---
 
 支持的特性包括：

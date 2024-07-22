@@ -5,12 +5,12 @@ update:
 		git clone git@github.com:LinuxSuRen/linuxsuren.github.io.git; \
 	fi
 
-live:
-	make update
-	hugo server
+server:
+	hugo server --bind 0.0.0.0
 
-deploy:
-	make update
+live: update server
+
+deploy: update
 	hugo
 	cp -r public/* linuxsuren.github.io
 	cd linuxsuren.github.io && git add . && git commit -m 'deploy' && git push

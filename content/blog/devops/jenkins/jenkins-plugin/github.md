@@ -4,7 +4,6 @@ description: "Github"
 date: 2019-01-08T21:48:43+08:00
 draft: false
 toc: true
-jenkinsIssues: "component%20%3D%20github-plugin"
 ---
 
 # webhook
