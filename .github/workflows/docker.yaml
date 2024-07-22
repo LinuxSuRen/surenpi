@@ -15,12 +15,13 @@ jobs:
     - name: Install hugo
       run: |
         hd install hugo
-
+    - name: Publish
+      run: |
         hugo
-        export GITHUB_TOKEN=${{ secrets.GH_TOKEN }}
+        export GITHUB_TOKEN=${{ secrets.GH_PUBLISH_TOKEN }}
         gh repo clone linuxsuren.github.io
         cp -r public/* linuxsuren.github.io
         cd linuxsuren.github.io && \
-          git config --global user.name "${GITHUB_ACTOR}" && \
-          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \
+          git config --global user.name "linuxsuren" && \
+          git config --global user.email "linuxsuren@users.noreply.github.com" && \
           git add . && git commit -m 'deploy' && git push
