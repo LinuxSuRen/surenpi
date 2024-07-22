@@ -16,9 +16,10 @@ jobs:
       run: |
         hd install hugo
     - name: Publish
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_PUBLISH_TOKEN }}
       run: |
         hugo
-        export GITHUB_TOKEN=${{ secrets.GH_PUBLISH_TOKEN }}
         gh repo clone linuxsuren.github.io
         cp -r public/* linuxsuren.github.io
         cd linuxsuren.github.io && \
