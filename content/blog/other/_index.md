@@ -1,6 +1,4 @@
 ---
-title: 其他内容
-weight: 140
+title: 未归类
+weight: 130
 ---
-
-没有归类的部分
